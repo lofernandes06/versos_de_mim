@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="Conheça Versos de Mim, livro de poemas de Lorrane Fernandes, e acompanhe As Estações do Coração.">
+  <title>Lorrane Fernandes — As Estações do Coração</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #f7f4ed;
+      --paper-deep: #ede8dc;
+      --ink: #26372f;
+      --muted: #657169;
+      --forest: #355748;
+      --forest-dark: #203d31;
+      --sage: #c7d0bc;
+      --rose: #c47b70;
+      --gold: #c5a875;
+      --line: rgba(38, 55, 47, .14);
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+      --shadow: 0 28px 70px rgba(38, 55, 47, .12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); line-height: 1.65; }
+    a { color: inherit; }
+    img, svg { display: block; max-width: 100%; }
+    .skip-link { position: absolute; top: -60px; left: 16px; padding: 10px 16px; background: white; z-index: 20; }
+    .skip-link:focus { top: 16px; }
+    .wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+    .topbar { position: sticky; top: 0; z-index: 10; background: rgba(247, 244, 237, .91); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(38,55,47,.08); }
+    .nav { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .wordmark { text-decoration: none; font: 600 20px/1.1 var(--serif); letter-spacing: -.04em; }
+    .wordmark small { display: block; margin-top: 5px; color: var(--muted); font: 600 9px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 29px; }
+    .nav-links a { text-decoration: none; color: #4d5c53; font-size: 12px; font-weight: 600; letter-spacing: .03em; }
+    .nav-links a:hover { color: var(--rose); }
+    .nav-cta, .button { display: inline-flex; justify-content: center; align-items: center; gap: 9px; min-height: 46px; padding: 0 20px; border-radius: 999px; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: .035em; transition: transform .2s ease, background .2s ease; }
+    .nav-cta, .button-dark { color: white; background: var(--forest-dark); }
+    .button-dark:hover, .nav-cta:hover { background: var(--forest); transform: translateY(-2px); }
+    .button-light { color: var(--forest-dark); border: 1px solid rgba(32,61,49,.24); background: rgba(255,255,255,.2); }
+    .button-light:hover { background: white; transform: translateY(-2px); }
+    .menu-toggle { display: none; border: 0; background: transparent; color: var(--ink); font: 600 13px var(--sans); }
+    .hero { position: relative; overflow: hidden; padding: 74px 0 84px; }
+    .hero:before { content: ""; position: absolute; width: 620px; height: 620px; top: -300px; left: -260px; border: 1px solid rgba(197,168,117,.22); border-radius: 50%; box-shadow: 0 0 0 46px rgba(197,168,117,.035), 0 0 0 92px rgba(197,168,117,.025); }
+    .hero-grid { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 58px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--forest); font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+    .eyebrow:before { content: ""; width: 24px; height: 1px; background: var(--rose); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 620px; margin: 21px 0 19px; font: 500 clamp(48px, 6.7vw, 84px)/1.03 var(--serif); letter-spacing: -.055em; }
+    h1 em { color: var(--rose); font-weight: 400; }
+    .hero-copy { max-width: 490px; color: var(--muted); font-size: 15px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 27px; }
+    .hero-note { display: flex; align-items: center; gap: 12px; margin-top: 43px; color: var(--muted); font-size: 11px; }
+    .hero-note span { width: 34px; height: 1px; background: var(--gold); }
+    .scene { position: relative; min-height: 490px; display: grid; place-items: center; }
+    .scene-halo { position: absolute; width: min(450px, 90%); aspect-ratio: 1; border: 1px solid rgba(53,87,72,.14); border-radius: 50%; }
+    .scene-halo:before, .scene-halo:after { content: ""; position: absolute; inset: 22px; border: 1px solid rgba(196,123,112,.2); border-radius: 50%; }
+    .scene-halo:after { inset: 46px; border-color: rgba(197,168,117,.2); }
+    .book { position: relative; width: 235px; height: 340px; transform: rotate(-7deg); perspective: 900px; filter: drop-shadow(20px 26px 18px rgba(28,49,39,.2)); }
+    .book-front { position: absolute; inset: 0; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 31px 22px 25px; color: #344a43; text-align: center; background: linear-gradient(155deg, #e1e5df 0%, #c9d5d3 45%, #e9ded5 100%); border: 1px solid rgba(255,255,255,.75); border-radius: 2px 8px 8px 2px; }
+    .book-front:before { content: ""; position: absolute; inset: 12px; border: 1px solid rgba(255,255,255,.58); }
+    .book-front:after { content: ""; position: absolute; width: 240px; height: 150px; bottom: -29px; left: -3px; border-radius: 50% 50% 0 0; background: radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.5), transparent 65%); }
+    .cover-flower { position: absolute; top: 95px; left: 50%; width: 100px; height: 100px; transform: translateX(-50%); }
+    .cover-flower i { position: absolute; left: 43px; top: 8px; width: 15px; height: 39px; border-radius: 90% 90% 45% 45%; background: rgba(201,147,145,.68); transform-origin: 50% 42px; }
+    .cover-flower i:nth-child(2) { transform: rotate(60deg); }.cover-flower i:nth-child(3) { transform: rotate(120deg); }.cover-flower i:nth-child(4) { transform: rotate(180deg); }.cover-flower i:nth-child(5) { transform: rotate(240deg); }.cover-flower i:nth-child(6) { transform: rotate(300deg); }
+    .cover-flower b { position: absolute; top: 41px; left: 42px; width: 17px; height: 17px; border-radius: 50%; background: #d2af75; }
+    .cover-stem { position: absolute; left: 50%; top: 176px; width: 1px; height: 61px; background: rgba(73,105,81,.6); transform: rotate(8deg); }
+    .cover-leaf { position: absolute; left: 118px; top: 195px; width: 20px; height: 10px; border-radius: 100% 0 100% 0; background: rgba(104,133,103,.53); transform: rotate(-20deg); }
+    .cover-top, .cover-bottom { position: relative; z-index: 1; font-size: 7px; letter-spacing: .23em; text-transform: uppercase; }
+    .cover-title { position: relative; z-index: 1; margin-top: 95px; font: 500 25px/1.05 var(--serif); letter-spacing: -.04em; }
+    .cover-subtitle { position: relative; z-index: 1; font: italic 10px var(--serif); }
+    .book-spine { position: absolute; width: 17px; top: 2px; bottom: 2px; left: -16px; background: linear-gradient(90deg,#a9b9b5,#dae0da 65%,#b1bdb4); transform: skewY(-2deg); box-shadow: inset -3px 0 4px rgba(40,60,48,.13); }
+    .scene-label { position: absolute; right: 2%; bottom: 6%; max-width: 135px; color: var(--muted); font: italic 15px/1.3 var(--serif); text-align: right; }
+    .floating-leaf { position: absolute; color: var(--rose); opacity: .65; font: 30px var(--serif); }
+    .leaf-one { top: 15%; right: 13%; transform: rotate(32deg); }.leaf-two { left: 8%; bottom: 20%; color: var(--gold); transform: rotate(-28deg); }
+    .section { padding: 100px 0; }
+    .section-head { max-width: 670px; margin-bottom: 48px; }
+    .section-head h2 { margin: 14px 0 12px; font: 500 clamp(36px, 4.4vw, 55px)/1.1 var(--serif); letter-spacing: -.045em; }
+    .section-head p { max-width: 580px; margin-bottom: 0; color: var(--muted); font-size: 14px; }
+    .poetry { background: #eceee8; }
+    .poetry-grid { display: grid; grid-template-columns: .82fr 1.18fr; align-items: center; gap: 82px; }
+    .poetry-art { min-height: 395px; display: grid; place-items: center; position: relative; background: #dfe5df; overflow: hidden; }
+    .poetry-art:before { content: ""; position: absolute; width: 310px; height: 310px; border: 1px solid rgba(53,87,72,.17); border-radius: 50%; box-shadow: 0 0 0 26px rgba(255,255,255,.13), 0 0 0 52px rgba(255,255,255,.1); }
+    .mini-book { position: relative; width: 178px; height: 265px; padding: 25px 14px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; color: #344a43; text-align: center; background: linear-gradient(150deg,#e6e8e2,#cbd8d7 56%,#e9ddd5); box-shadow: 12px 17px 22px rgba(38,55,47,.2); transform: rotate(5deg); }
+    .mini-book:before { content: ""; position: absolute; inset: 8px; border: 1px solid rgba(255,255,255,.64); }
+    .mini-book strong { position: relative; z-index: 1; margin-top: 72px; font: 500 21px/1.05 var(--serif); }
+    .mini-book small { position: relative; z-index: 1; font-size: 7px; letter-spacing: .18em; text-transform: uppercase; }
+    .mini-flower { position: absolute; top: 62px; left: calc(50% - 17px); color: #c58d8a; font-size: 33px; }
+    .book-text h3 { margin: 17px 0; font: 500 37px var(--serif); letter-spacing: -.04em; }
+    .book-text p { max-width: 510px; color: var(--muted); font-size: 14px; }
+    .book-text .meta { margin: 23px 0; color: #69776d; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+    .small-quote { margin: 25px 0 28px; padding-left: 18px; border-left: 1px solid var(--rose); color: var(--forest); font: italic 18px/1.45 var(--serif); }
+    .season-intro { display: flex; justify-content: space-between; align-items: end; gap: 36px; }
+    .season-intro .section-head { margin-bottom: 38px; }
+    .season-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .season { position: relative; min-height: 215px; padding: 29px 25px 24px 0; }
+    .season + .season { padding-left: 25px; border-left: 1px solid var(--line); }
+    .season-number { color: var(--rose); font-size: 10px; letter-spacing: .18em; }
+    .season h3 { margin: 21px 0 9px; font: 500 25px var(--serif); }
+    .season p { margin: 0; color: var(--muted); font-size: 12px; }
+    .season-mark { position: absolute; top: 24px; right: 19px; color: var(--gold); font: 28px var(--serif); opacity: .8; }
+    .ireland { position: relative; overflow: hidden; color: #f7f4ed; background: var(--forest-dark); }
+    .ireland:after { content: ""; position: absolute; width: 480px; height: 480px; right: -140px; top: -210px; border: 1px solid rgba(255,255,255,.1); border-radius: 50%; box-shadow: 0 0 0 42px rgba(255,255,255,.025), 0 0 0 84px rgba(255,255,255,.02); }
+    .ireland .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 72px; }
+    .ireland .eyebrow { color: #d7c499; }
+    .ireland h2 { margin: 17px 0; font: 500 clamp(38px, 5vw, 59px)/1.1 var(--serif); letter-spacing: -.04em; }
+    .ireland p { max-width: 490px; color: rgba(247,244,237,.72); font-size: 14px; }
+    .landscape { position: relative; height: 330px; overflow: hidden; background: linear-gradient(#a9b7ad 0%,#d6d5c3 51%,#8caa83 52%,#5e8067 100%); }
+    .landscape:before { content: ""; position: absolute; inset: 0; background: linear-gradient(130deg,transparent 42%,rgba(247,244,237,.34) 42.2%,transparent 43%), linear-gradient(170deg,transparent 53%,rgba(42,81,58,.4) 53.2%,transparent 53.6%); }
+    .hill { position: absolute; width: 130%; left: -15%; height: 220px; bottom: -120px; border-radius: 50% 50% 0 0; background: #436e55; transform: rotate(-8deg); }
+    .hill-two { width: 120%; left: -7%; bottom: -165px; height: 230px; background: #2f5d47; transform: rotate(7deg); }
+    .stone-house { position: absolute; right: 18%; bottom: 96px; width: 91px; height: 67px; background: #d6cdb8; border: 5px solid #c2b79f; }
+    .stone-house:before { content: ""; position: absolute; width: 0; height: 0; top: -42px; left: -11px; border-left: 54px solid transparent; border-right: 54px solid transparent; border-bottom: 42px solid #7d6255; }
+    .stone-house:after { content: ""; position: absolute; left: 35px; bottom: 0; width: 20px; height: 34px; background: #7b6252; box-shadow: -25px -19px 0 -5px #8da69a, 24px -19px 0 -5px #8da69a; }
+    .landscape-caption { position: absolute; left: 19px; bottom: 15px; color: rgba(255,255,255,.9); font: italic 14px var(--serif); }
+    .author { background: #f1ede4; }
+    .author-inner { display: grid; grid-template-columns: 150px 1fr; gap: 38px; align-items: start; max-width: 800px; }
+    .author-monogram { width: 128px; aspect-ratio: 1; display: grid; place-items: center; border: 1px solid rgba(53,87,72,.27); border-radius: 50%; color: var(--forest); font: italic 45px var(--serif); }
+    .author h2 { margin: 14px 0 15px; font: 500 40px var(--serif); }
+    .author p { color: var(--muted); font-size: 14px; }
+    .closing { padding: 78px 0; text-align: center; background: #e6ebe4; }
+    .closing blockquote { max-width: 720px; margin: 0 auto 20px; color: var(--forest-dark); font: italic 34px/1.25 var(--serif); letter-spacing: -.025em; }
+    .closing p { color: var(--muted); font-size: 12px; }
+    footer { padding: 34px 0; color: rgba(247,244,237,.76); background: #203d31; }
+    .footer-row { display: flex; justify-content: space-between; align-items: center; gap: 22px; }
+    .footer-brand { color: white; font: 500 19px var(--serif); }
+    footer p { margin: 4px 0 0; font-size: 10px; }
+    .footer-link { color: #e7d8b5; font-size: 11px; text-decoration: none; }
+    .reveal { animation: rise .75s both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 800px) {
+      .wrap { width: min(100% - 36px, 620px); }
+      .nav { min-height: 70px; }
+      .menu-toggle { display: block; }
+      .nav-cta { display: none; }
+      .nav-links { display: none; position: absolute; top: 70px; left: 0; right: 0; padding: 20px 24px 24px; flex-direction: column; align-items: flex-start; gap: 18px; background: var(--paper); border-bottom: 1px solid var(--line); }
+      .nav-links.open { display: flex; }
+      .hero { padding: 48px 0 62px; }
+      .hero-grid, .poetry-grid, .ireland .wrap { grid-template-columns: 1fr; gap: 34px; }
+      .scene { min-height: 400px; }
+      .book { transform: scale(.9) rotate(-7deg); }
+      .hero-note { margin-top: 26px; }
+      .section { padding: 72px 0; }
+      .poetry-grid { gap: 42px; }
+      .poetry-art { min-height: 340px; }
+      .season-grid { grid-template-columns: repeat(2, 1fr); }
+      .season { min-height: 185px; padding-left: 0; }
+      .season + .season { padding-left: 18px; }
+      .season:nth-child(3) { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); }
+      .season:nth-child(4) { border-top: 1px solid var(--line); }
+      .ireland .wrap { gap: 30px; }
+      .landscape { height: 270px; }
+      .author-inner { grid-template-columns: 92px 1fr; gap: 22px; }
+      .author-monogram { width: 86px; font-size: 34px; }
+    }
+    @media (max-width: 480px) {
+      .wrap { width: calc(100% - 32px); }
+      .wordmark { font-size: 18px; }
+      h1 { font-size: 49px; }
+      .hero-copy { font-size: 14px; }
+      .hero-actions .button { flex: 1; padding-inline: 12px; }
+      .scene { min-height: 355px; }
+      .scene-label { right: 0; bottom: 1%; font-size: 13px; }
+      .book { transform: scale(.8) rotate(-7deg); }
+      .section-head h2 { font-size: 38px; }
+      .season { padding-right: 12px; }
+      .season + .season { padding-left: 14px; }
+      .season h3 { font-size: 22px; }
+      .season p { font-size: 11px; }
+      .author-inner { grid-template-columns: 1fr; }
+      .author-monogram { width: 74px; font-size: 30px; }
+      .closing blockquote { font-size: 27px; }
+      .footer-row { align-items: flex-start; flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *:before, *:after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Navegação principal">
+      <a class="wordmark" href="#inicio">Lorrane Fernandes<small>palavras que florescem</small></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#livro">Versos de Mim</a>
+        <a href="#romance">O romance</a>
+        <a href="#irlanda">A Irlanda</a>
+        <a href="#autora">A autora</a>
+      </div>
+      <a class="nav-cta" href="https://loja.uiclap.com/titulo/ua102727" target="_blank" rel="noopener noreferrer">Encontrar o livro <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">Um lugar para histórias</span>
+          <h1>Algumas histórias florescem <em>em todas as estações.</em></h1>
+          <p class="hero-copy">Entre versos íntimos e um romance que atravessa o tempo, cada página abre espaço para sentir, lembrar e recomeçar.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#livro">Conheça meus livros <span aria-hidden="true">↓</span></a>
+            <a class="button button-light" href="#romance">Entre na história</a>
+          </div>
+          <div class="hero-note"><span></span> Poesia, memória e os caminhos do coração</div>
+        </div>
+        <div class="scene" aria-label="Representação artística do livro Versos de Mim">
+          <div class="scene-halo"></div>
+          <span class="floating-leaf leaf-one" aria-hidden="true">✿</span>
+          <span class="floating-leaf leaf-two" aria-hidden="true">✧</span>
+          <div class="book" aria-hidden="true">
+            <div class="book-spine"></div>
+            <div class="book-front">
+              <span class="cover-top">Lorrane Fernandes</span>
+              <div class="cover-flower"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></div>
+              <span class="cover-stem"></span><span class="cover-leaf"></span>
+              <strong class="cover-title">Versos<br>de Mim</strong>
+              <span class="cover-subtitle">poemas sobre ser, sentir e florescer</span>
+              <span class="cover-bottom">Poesia • edição física</span>
+            </div>
+          </div>
+          <p class="scene-label">Palavras guardadas<br>como flores entre páginas</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section poetry" id="livro">
+      <div class="wrap poetry-grid">
+        <div class="poetry-art" role="img" aria-label="Ilustração delicada de um livro de poesia com uma flor">
+          <div class="mini-book"><small>Lorrane Fernandes</small><span class="mini-flower" aria-hidden="true">✿</span><strong>Versos<br>de Mim</strong><small>poemas sobre ser, sentir e florescer</small></div>
+        </div>
+        <div class="book-text">
+          <span class="eyebrow">Minha primeira obra publicada</span>
+          <h3>Versos de Mim</h3>
+          <p class="meta">Poesia · livro físico</p>
+          <p>Uma coletânea sobre ser, sentir e florescer. Poemas que acompanham os movimentos da vida — os dias de descoberta, as saudades, as mudanças e a coragem tranquila de começar de novo.</p>
+          <blockquote class="small-quote">“Há partes de nós que só encontram voz quando viram palavra.”</blockquote>
+          <a class="button button-dark" href="https://loja.uiclap.com/titulo/ua102727" target="_blank" rel="noopener noreferrer">Ver na UICLAP <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="romance">
+      <div class="wrap">
+        <div class="season-intro">
+          <div class="section-head">
+            <span class="eyebrow">Um romance em construção</span>
+            <h2>As Estações do Coração</h2>
+            <p>Uma história pensada para acompanhar o tempo como ele merece: com mudanças, lembranças e sentimentos que amadurecem a cada estação.</p>
+          </div>
+        </div>
+        <div class="season-grid" aria-label="As quatro estações que inspiram o romance">
+          <article class="season"><span class="season-number">01 / FLORESCER</span><span class="season-mark" aria-hidden="true">✿</span><h3>Primavera</h3><p>O início de algo novo, quando o coração volta a abrir espaço.</p></article>
+          <article class="season"><span class="season-number">02 / PERMANECER</span><span class="season-mark" aria-hidden="true">☼</span><h3>Verão</h3><p>Afeto em sua luz plena: vivo, generoso e impossível de esconder.</p></article>
+          <article class="season"><span class="season-number">03 / TRANSFORMAR</span><span class="season-mark" aria-hidden="true">❧</span><h3>Outono</h3><p>O que muda também ensina; algumas lembranças criam raízes.</p></article>
+          <article class="season"><span class="season-number">04 / RECOMEÇAR</span><span class="season-mark" aria-hidden="true">✧</span><h3>Inverno</h3><p>No silêncio, certas histórias encontram o caminho de volta.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ireland" id="irlanda">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">Paisagem de uma história</span>
+          <h2>Irlanda: onde a memória encontra o caminho.</h2>
+          <p>Campos verdes, casas de pedra e caminhos antigos compõem o horizonte deste universo romântico. Um lugar onde cada estação guarda uma lembrança — e cada caminho pode levar a uma nova página.</p>
+        </div>
+        <div class="landscape" role="img" aria-label="Ilustração de colinas verdes e uma casa de pedra na Irlanda">
+          <div class="stone-house"></div><div class="hill"></div><div class="hill hill-two"></div><span class="landscape-caption">um lugar para voltar</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section author" id="autora">
+      <div class="wrap author-inner">
+        <div class="author-monogram" aria-hidden="true">LF</div>
+        <div>
+          <span class="eyebrow">Por trás das páginas</span>
+          <h2>Sobre a autora</h2>
+          <p>Sou Lorrane Fernandes, escritora e estudante de psicopedagogia. Encontro nas palavras um jeito de acolher sentimentos, guardar memórias e imaginar novos caminhos. Escrevo sobre aquilo que nos transforma — por dentro e ao longo do tempo.</p>
+          <a class="footer-link" href="https://www.instagram.com/words_lo/" target="_blank" rel="noopener noreferrer">Acompanhe meus escritos no Instagram ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="wrap">
+        <blockquote>“Alguns amores chegam como a primavera. Outros permanecem por todas as estações.”</blockquote>
+        <p>Uma história de Lorrane Fernandes</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div><div class="footer-brand">Lorrane Fernandes</div><p>Palavras para sentir, lembrar e florescer.</p></div>
+      <a class="footer-link" href="https://loja.uiclap.com/titulo/ua102727" target="_blank" rel="noopener noreferrer">Versos de Mim na UICLAP ↗</a>
+      <p>© <span id="year"></span> Lorrane Fernandes</p>
+    </div>
+  </footer>
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const links = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+    links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      links.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    }));
+    document.querySelector('#year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
