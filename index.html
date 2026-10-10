@@ -105,6 +105,12 @@
     .season h3 { margin: 21px 0 9px; font: 500 25px var(--serif); }
     .season p { margin: 0; color: var(--muted); font-size: 12px; }
     .season-mark { position: absolute; top: 24px; right: 19px; color: var(--gold); font: 28px var(--serif); opacity: .8; }
+    .winter-book { background: #e9eeec; }
+    .winter-book .section-head { margin-bottom: 35px; }
+    .character-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+    .character-card { overflow: hidden; background: rgba(255,255,255,.62); border: 1px solid rgba(38,55,47,.08); }
+    .character-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center; background: #d6ddda; }
+    .character-card h3 { margin: 0; padding: 15px 14px 17px; font: 500 19px/1.2 var(--serif); }
     .ireland { position: relative; overflow: hidden; color: #f7f4ed; background: var(--forest-dark); }
     .ireland:after { content: ""; position: absolute; width: 480px; height: 480px; right: -140px; top: -210px; border: 1px solid rgba(255,255,255,.1); border-radius: 50%; box-shadow: 0 0 0 42px rgba(255,255,255,.025), 0 0 0 84px rgba(255,255,255,.02); }
     .ireland .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 72px; }
@@ -154,6 +160,8 @@
       .season + .season { padding-left: 18px; }
       .season:nth-child(3) { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); }
       .season:nth-child(4) { border-top: 1px solid var(--line); }
+      .character-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+      .character-card h3 { padding: 12px 10px 14px; font-size: 17px; }
       .ireland .wrap { gap: 30px; }
       .landscape { height: 270px; }
       .author-inner { grid-template-columns: 92px 1fr; gap: 22px; }
@@ -173,6 +181,8 @@
       .season + .season { padding-left: 14px; }
       .season h3 { font-size: 22px; }
       .season p { font-size: 11px; }
+      .character-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      .character-card h3 { font-size: 16px; }
       .author-inner { grid-template-columns: 1fr; }
       .author-monogram { width: 74px; font-size: 30px; }
       .closing blockquote { font-size: 27px; }
@@ -190,6 +200,7 @@
       <div class="nav-links" id="nav-links">
         <a href="#livro">Versos de Mim</a>
         <a href="#romance">O romance</a>
+        <a href="#as-coisas">As Coisas do Inverno</a>
         <a href="#irlanda">A Irlanda</a>
         <a href="#autora">A autora</a>
       </div>
@@ -260,6 +271,25 @@
           <article class="season"><span class="season-number">02 / PERMANECER</span><span class="season-mark" aria-hidden="true">☼</span><h3>Verão</h3><p>Afeto em sua luz plena: vivo, generoso e impossível de esconder.</p></article>
           <article class="season"><span class="season-number">03 / TRANSFORMAR</span><span class="season-mark" aria-hidden="true">❧</span><h3>Outono</h3><p>O que muda também ensina; algumas lembranças criam raízes.</p></article>
           <article class="season"><span class="season-number">04 / RECOMEÇAR</span><span class="season-mark" aria-hidden="true">✧</span><h3>Inverno</h3><p>No silêncio, certas histórias encontram o caminho de volta.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section winter-book" id="as-coisas">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Um novo livro</span>
+          <h2>As Coisas que Deixamos no Inverno</h2>
+          <p>Conheça alguns dos personagens que fazem parte desta história.</p>
+        </div>
+        <div class="character-grid" aria-label="Personagens de As Coisas que Deixamos no Inverno">
+          <article class="character-card"><img src="assets/characters/augusto-valenca.webp" alt="Augusto Valença" loading="lazy"><h3>Augusto Valença</h3></article>
+          <article class="character-card"><img src="assets/characters/celeste-fagundes.webp" alt="Dona Celeste Fagundes" loading="lazy"><h3>Dona Celeste Fagundes</h3></article>
+          <article class="character-card"><img src="assets/characters/marina-duarte.webp" alt="Marina Duarte" loading="lazy"><h3>Marina Duarte</h3></article>
+          <article class="character-card"><img src="assets/characters/tomas-valenca.webp" alt="Tomás Valença" loading="lazy"><h3>Tomás Valença</h3></article>
+          <article class="character-card"><img src="assets/characters/benicio-duarte.webp" alt="Benício Duarte" loading="lazy"><h3>Benício Duarte</h3></article>
+          <article class="character-card"><img src="assets/characters/elena-valenca.webp" alt="Elena Valença" loading="lazy"><h3>Elena Valença</h3></article>
+          <article class="character-card"><img src="assets/characters/isabel-valenca.webp" alt="Isabel Valença" loading="lazy"><h3>Isabel Valença</h3></article>
         </div>
       </div>
     </section>
