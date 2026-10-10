@@ -1,0 +1,8 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "versos-de-mim",
+  "compatibility_date": "2026-10-10",
+  "assets": {
+    "directory": "./dist"
+  }
+}
