@@ -8,4 +8,4 @@ if [[ -d assets ]]; then
   cp -R assets dist/assets
 fi
 
-echo "Cloudflare Pages output prepared in dist/"
+echo "Cloudflare Workers assets prepared in dist/"
