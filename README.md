@@ -9,8 +9,24 @@ Site literário de Lorrane Fernandes, reunindo o livro de poemas *Versos de Mim*
 - Biografia da autora e link para o perfil literário.
 - Layout responsivo, navegação para celular e HTML, CSS e JavaScript em um único arquivo.
 
-## Como visualizar
+## Publicar no Cloudflare Pages
 
-Abra index.html no navegador. Para publicar pelo GitHub Pages, acesse **Settings → Pages**, selecione a branch main e a pasta / (root), então salve.
+Este repositório está preparado como site HTML estático, sem framework ou dependências.
+
+Na criação do projeto Cloudflare Pages, use:
+
+- Production branch: `main`
+- Root directory: `/` (raiz do repositório)
+- Build command: `bash ./build.sh`
+- Build output directory: `dist`
+- Framework preset: `None`
+
+O script copia `index.html` para `dist/index.html`, a página principal que o Pages serve. O Cloudflare faz um novo build a cada atualização do branch conectado.
+
+Guia oficial: https://developers.cloudflare.com/pages/framework-guides/deploy-anything/
+
+## Visualizar localmente
+
+Abra `index.html` no navegador ou execute `bash ./build.sh` para gerar os arquivos de publicação em `dist/`.
 
 A arte da capa no código é uma ilustração provisória. Substitua pela imagem oficial quando ela estiver disponível no repositório.
