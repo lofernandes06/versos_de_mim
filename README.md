@@ -9,21 +9,19 @@ Site literário de Lorrane Fernandes, reunindo *Versos de Mim*, *As Estações d
 - Galeria com os personagens de *As Coisas que Deixamos no Inverno*.
 - Layout responsivo, navegação para celular e HTML, CSS e JavaScript em um único arquivo.
 
-## Publicar no Cloudflare Pages
+## Publicar no Cloudflare Workers
 
-Este repositório está preparado como site HTML estático, sem framework ou dependências.
+O arquivo `wrangler.jsonc` configura o site como um Worker de arquivos estáticos, compatível com o endereço `*.workers.dev`.
 
-Na criação do projeto Cloudflare Pages, use:
+Para publicar a partir de um computador autenticado na sua conta Cloudflare:
 
-- Production branch: `main`
-- Root directory: `/` (raiz do repositório)
-- Build command: `bash ./build.sh`
-- Build output directory: `dist`
-- Framework preset: `None`
+1. Execute `npx wrangler login` para autenticar.
+2. Execute `bash ./build.sh` para preparar `dist/`.
+3. Execute `npx wrangler deploy` para atualizar o Worker `versos-de-mim`.
 
-O script prepara `dist/index.html` e copia as imagens de `assets/characters/` para `dist/assets/characters/`. O Pages serve a página principal e suas imagens a partir dessa pasta.
+O script prepara `dist/index.html` e copia as imagens de `assets/characters/` para `dist/assets/characters/`. O Worker serve a página principal e suas imagens a partir dessa pasta.
 
-Guia oficial: https://developers.cloudflare.com/pages/framework-guides/deploy-anything/
+Guia oficial: https://developers.cloudflare.com/workers/static-assets/get-started/
 
 ## Visualizar localmente
 
