@@ -202,7 +202,9 @@
     .character-info { padding: 15px 15px 17px; }
     .family-label { display: block; margin-bottom: 5px; color: var(--rose); font-size: .65rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
     .character-info h3 { margin: 0 0 7px; font-size: 1.22rem; }
-    .character-line { min-height: 42px; margin: 0 0 12px; color: var(--muted); font-size: .78rem; line-height: 1.5; }
+    .character-line { min-height: 42px; margin: 0 0 8px; color: var(--muted); font-size: .78rem; line-height: 1.5; }
+    .character-trait { min-height: 42px; margin: 0 0 8px; color: var(--ink); font-size: .78rem; line-height: 1.5; }
+    .character-quote { margin: 0 0 8px; color: var(--rose); font: italic .9rem/1.4 var(--serif); }
     .character-open { min-height: 42px; padding: 7px 0; border: 0; color: var(--forest-deep); background: transparent; font-size: .8rem; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
     .editorial-placeholder { margin-top: 14px; color: var(--muted); font-size: .75rem; }
 
@@ -266,6 +268,8 @@
     .dialog-inner h2 { padding-top: 24px; font-size: 2rem; }
     .dialog-family { color: var(--rose); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
     .dialog-inner p { color: var(--muted); }
+    .dialog-role { font-weight: 700; }
+    .dialog-quote { margin: 20px 0 0; padding-left: 16px; border-left: 2px solid var(--rose); color: var(--forest-deep); font: italic 1.2rem/1.5 var(--serif); }
 
     @media (max-width: 900px) {
       .nav-links { gap: 14px; }
@@ -485,39 +489,39 @@ e o silêncio virou jardim.</blockquote>
         <div class="section-intro">
           <span class="eyebrow">As Coisas que Deixamos no Inverno</span>
           <h2 id="characters-heading">Personagens e seus núcleos</h2>
-          <p>Toque em um cartão para abrir sua ficha. Os papéis e as descrições aguardam os detalhes oficiais da história.</p>
+          <p>Conheça os personagens de Vale do Cedro, suas histórias e as frases que carregam consigo.</p>
         </div>
         <div class="character-grid">
           <article class="character-card">
             <img class="character-photo" src="assets/characters/augusto-valenca.webp" alt="Retrato de Augusto Valença" width="600" height="600" loading="lazy" decoding="async">
-            <div class="character-info"><span class="family-label">Núcleo Valença</span><h3>Augusto Valença</h3><p class="character-line">Um dos nomes que compõem a família Valença.</p><button class="character-open" type="button" data-name="Augusto Valença" data-family="Núcleo Valença" aria-haspopup="dialog">Abrir ficha</button></div>
+            <div class="character-info"><span class="family-label">Núcleo Valença</span><h3>Augusto Valença</h3><p class="character-line">Pai de Elena e Tomás · antigo dono da Pousada Valença</p><p class="character-trait">Reservado, teimoso e dedicado à família.</p><blockquote class="character-quote">“Eu só queria proteger vocês.”</blockquote><button class="character-open" type="button" data-name="Augusto Valença" data-family="Núcleo Valença" data-role="Pai de Elena e Tomás · antigo dono da Pousada Valença" data-description="Reservado, teimoso e profundamente dedicado à família. Morre antes do início da história, mas deixa cartas capazes de mudar tudo o que Elena acreditava saber." data-quote="Eu só queria proteger vocês." aria-haspopup="dialog">Abrir ficha</button></div>
           </article>
           <article class="character-card">
             <img class="character-photo" src="assets/characters/celeste-fagundes.webp" alt="Retrato de Dona Celeste Fagundes" width="360" height="360" loading="lazy" decoding="async">
-            <div class="character-info"><span class="family-label">Núcleo Fagundes</span><h3>Dona Celeste Fagundes</h3><p class="character-line">Uma personagem do núcleo Fagundes.</p><button class="character-open" type="button" data-name="Dona Celeste Fagundes" data-family="Núcleo Fagundes" aria-haspopup="dialog">Abrir ficha</button></div>
+            <div class="character-info"><span class="family-label">Núcleo Fagundes</span><h3>Dona Celeste Fagundes</h3><p class="character-line">67 anos · dona do Café da Celeste</p><p class="character-trait">Carinhosa, dramática e curiosa; sabe de tudo em Vale do Cedro.</p><blockquote class="character-quote">“Não é fofoca se for verdade.”</blockquote><button class="character-open" type="button" data-name="Dona Celeste Fagundes" data-family="Núcleo Fagundes" data-role="67 anos · dona do Café da Celeste" data-description="Carinhosa, dramática e extremamente curiosa. Sabe praticamente tudo o que acontece em Vale do Cedro e considera informação uma coisa feita para ser compartilhada." data-quote="Não é fofoca se for verdade." aria-haspopup="dialog">Abrir ficha</button></div>
           </article>
           <article class="character-card">
             <img class="character-photo" src="assets/characters/marina-duarte.webp" alt="Retrato de Marina Duarte" width="736" height="736" loading="lazy" decoding="async">
-            <div class="character-info"><span class="family-label">Núcleo Duarte</span><h3>Marina Duarte</h3><p class="character-line">Uma das histórias que pertencem ao núcleo Duarte.</p><button class="character-open" type="button" data-name="Marina Duarte" data-family="Núcleo Duarte" aria-haspopup="dialog">Abrir ficha</button></div>
+            <div class="character-info"><span class="family-label">Núcleo Duarte</span><h3>Marina Duarte</h3><p class="character-line">28 anos · florista</p><p class="character-trait">Intensa e sincera; ainda carrega uma mágoa antiga.</p><blockquote class="character-quote">“Eu só estou sendo sincera.”</blockquote><button class="character-open" type="button" data-name="Marina Duarte" data-family="Núcleo Duarte" data-role="28 anos · florista" data-description="Intensa, sincera e incapaz de fingir simpatia. Antiga melhor amiga de Elena, ainda carrega a mágoa de ter sido deixada para trás sem explicações." data-quote="Eu só estou sendo sincera." aria-haspopup="dialog">Abrir ficha</button></div>
           </article>
           <article class="character-card">
             <img class="character-photo" src="assets/characters/tomas-valenca.webp" alt="Retrato de Tomás Valença" width="735" height="735" loading="lazy" decoding="async">
-            <div class="character-info"><span class="family-label">Núcleo Valença</span><h3>Tomás Valença</h3><p class="character-line">Um dos nomes que compõem a família Valença.</p><button class="character-open" type="button" data-name="Tomás Valença" data-family="Núcleo Valença" aria-haspopup="dialog">Abrir ficha</button></div>
+            <div class="character-info"><span class="family-label">Núcleo Valença</span><h3>Tomás Valença</h3><p class="character-line">24 anos · professor de História</p><p class="character-trait">Divertido, sociável e provocador; guarda um segredo há anos.</p><blockquote class="character-quote">“Você sabe que eu tô certo.”</blockquote><button class="character-open" type="button" data-name="Tomás Valença" data-family="Núcleo Valença" data-role="24 anos · professor de História" data-description="Divertido, sociável e provocador. É uma das poucas pessoas capazes de quebrar a postura séria de Elena, embora esconda há anos um segredo importante." data-quote="Você sabe que eu tô certo." aria-haspopup="dialog">Abrir ficha</button></div>
           </article>
           <article class="character-card">
             <img class="character-photo" src="assets/characters/benicio-duarte.webp" alt="Retrato de Benício Duarte" width="736" height="736" loading="lazy" decoding="async">
-            <div class="character-info"><span class="family-label">Núcleo Duarte</span><h3>Benício Duarte</h3><p class="character-line">Um dos nomes que compõem a família Duarte.</p><button class="character-open" type="button" data-name="Benício Duarte" data-family="Núcleo Duarte" aria-haspopup="dialog">Abrir ficha</button></div>
+            <div class="character-info"><span class="family-label">Núcleo Duarte</span><h3>Benício Duarte</h3><p class="character-line">31 anos · marceneiro e restaurador</p><p class="character-trait">Tranquilo, observador e leal. Nunca esqueceu Elena.</p><blockquote class="character-quote">“Deixa que eu faço.”</blockquote><button class="character-open" type="button" data-name="Benício Duarte" data-family="Núcleo Duarte" data-role="31 anos · marceneiro e restaurador" data-description="Tranquilo, observador e leal. Passou a vida inteira em Vale do Cedro e esteve ao lado de Augusto nos últimos anos. Nunca esqueceu completamente Elena." data-quote="Deixa que eu faço." aria-haspopup="dialog">Abrir ficha</button></div>
           </article>
           <article class="character-card">
             <img class="character-photo" src="assets/characters/elena-valenca.webp" alt="Retrato de Elena Valença" width="736" height="736" loading="lazy" decoding="async">
-            <div class="character-info"><span class="family-label">Núcleo Valença</span><h3>Elena Valença</h3><p class="character-line">Uma das histórias que pertencem ao núcleo Valença.</p><button class="character-open" type="button" data-name="Elena Valença" data-family="Núcleo Valença" aria-haspopup="dialog">Abrir ficha</button></div>
+            <div class="character-info"><span class="family-label">Núcleo Valença</span><h3>Elena Valença</h3><p class="character-line">30 anos · arquiteta</p><p class="character-trait">Reservada, independente e controlada. Voltou para encarar o passado.</p><blockquote class="character-quote">“Eu resolvo.”</blockquote><button class="character-open" type="button" data-name="Elena Valença" data-family="Núcleo Valença" data-role="30 anos · arquiteta" data-description="Reservada, independente e controlada. Deixou Vale do Cedro aos vinte e dois anos e construiu sua vida em Curitiba. Oito anos depois, precisa voltar e encarar tudo o que tentou deixar para trás." data-quote="Eu resolvo." aria-haspopup="dialog">Abrir ficha</button></div>
           </article>
           <article class="character-card">
             <img class="character-photo" src="assets/characters/isabel-valenca.webp" alt="Retrato de Isabel Valença" width="736" height="736" loading="lazy" decoding="async">
-            <div class="character-info"><span class="family-label">Núcleo Valença</span><h3>Isabel Valença</h3><p class="character-line">Um dos nomes que compõem a família Valença.</p><button class="character-open" type="button" data-name="Isabel Valença" data-family="Núcleo Valença" aria-haspopup="dialog">Abrir ficha</button></div>
+            <div class="character-info"><span class="family-label">Núcleo Valença</span><h3>Isabel Valença</h3><p class="character-line">Mãe de Elena e Tomás · pianista</p><p class="character-trait">Sensível e sonhadora; sua memória atravessa a família.</p><blockquote class="character-quote">“Algumas coisas precisam ser vividas antes de serem entendidas.”</blockquote><button class="character-open" type="button" data-name="Isabel Valença" data-family="Núcleo Valença" data-role="Mãe de Elena e Tomás · pianista" data-description="Sensível e sonhadora. Morreu durante o parto de Tomás, deixando uma memória que atravessa toda a família Valença." data-quote="Algumas coisas precisam ser vividas antes de serem entendidas." aria-haspopup="dialog">Abrir ficha</button></div>
           </article>
         </div>
-        <p class="editorial-placeholder">As frases são identificadores provisórios, não revelam relações ou características ainda não confirmadas.</p>
+        <p class="editorial-placeholder">Personagens de <em>As Coisas que Deixamos no Inverno</em>.</p>
       </div>
     </section>
 
@@ -526,13 +530,13 @@ e o silêncio virou jardim.</blockquote>
         <div class="section-intro">
           <span class="eyebrow">Mapa de relações</span>
           <h2 id="relations-heading">Valença &amp; Duarte</h2>
-          <p>Os núcleos estão organizados pelos sobrenomes conhecidos. O vínculo entre as famílias permanece a ser revelado pela autora.</p>
+          <p>Em Vale do Cedro, as histórias das famílias Valença e Duarte se aproximam por antigas amizades, perdas e lembranças.</p>
         </div>
         <div class="relation-map" role="group" aria-label="Mapa simples dos núcleos Valença e Duarte">
-          <div class="family-node"><h3>Família Valença</h3><ul><li>Augusto Valença</li><li>Tomás Valença</li><li>Elena Valença</li><li>Isabel Valença</li></ul></div>
-          <div class="relation-link" aria-label="Vínculo entre as famílias ainda não revelado">histórias que se cruzam</div>
-          <div class="family-node"><h3>Família Duarte</h3><ul><li>Marina Duarte</li><li>Benício Duarte</li></ul></div>
-          <p class="fagundes-note"><strong>Dona Celeste Fagundes</strong> aparece em um núcleo próprio; seu vínculo com as demais famílias será apresentado no romance.</p>
+          <div class="family-node"><h3>Família Valença</h3><ul><li>Augusto e Isabel: pais de Elena e Tomás</li><li>Elena: filha mais velha, de volta a Vale do Cedro</li><li>Tomás: filho caçula, professor de História</li></ul></div>
+          <div class="relation-link" aria-label="Elena e Benício compartilham uma história e não se esqueceram completamente um do outro">Elena e Benício: uma história que permaneceu</div>
+          <div class="family-node"><h3>Família Duarte</h3><ul><li>Marina: antiga melhor amiga de Elena</li><li>Benício: esteve ao lado de Augusto nos últimos anos</li></ul></div>
+          <p class="fagundes-note"><strong>Dona Celeste Fagundes</strong> conhece os acontecimentos de Vale do Cedro a partir do Café da Celeste.</p>
         </div>
       </div>
     </section>
@@ -617,7 +621,9 @@ e o silêncio virou jardim.</blockquote>
       <button class="dialog-close" type="button" aria-label="Fechar ficha">×</button>
       <span class="dialog-family" id="dialog-family"></span>
       <h2 id="dialog-title"></h2>
-      <p id="dialog-copy">Esta ficha aguarda a descrição oficial da autora: papel na história, vínculos e uma frase de apresentação.</p>
+      <p class="dialog-role" id="dialog-role"></p>
+      <p id="dialog-copy"></p>
+      <blockquote class="dialog-quote" id="dialog-quote"></blockquote>
     </div>
   </dialog>
 
@@ -659,10 +665,16 @@ e o silêncio virou jardim.</blockquote>
     const characterDialog = document.querySelector('#character-dialog');
     const dialogTitle = document.querySelector('#dialog-title');
     const dialogFamily = document.querySelector('#dialog-family');
+    const dialogRole = document.querySelector('#dialog-role');
+    const dialogCopy = document.querySelector('#dialog-copy');
+    const dialogQuote = document.querySelector('#dialog-quote');
     document.querySelectorAll('.character-open').forEach(function (button) {
       button.addEventListener('click', function () {
         dialogTitle.textContent = button.dataset.name;
         dialogFamily.textContent = button.dataset.family;
+        dialogRole.textContent = button.dataset.role;
+        dialogCopy.textContent = button.dataset.description;
+        dialogQuote.textContent = '“' + button.dataset.quote + '”';
         characterDialog.showModal();
       });
     });
