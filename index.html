@@ -4,344 +4,679 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f4ed">
-  <meta name="description" content="Conheça Versos de Mim, livro de poemas de Lorrane Fernandes, e acompanhe As Estações do Coração.">
-  <title>Lorrane Fernandes — As Estações do Coração</title>
+  <meta name="description" content="Conheça Versos de Mim, livro de poesia de Lorrane Fernandes, leia uma amostra e acompanhe seus romances em construção.">
+  <meta name="author" content="Lorrane Fernandes">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://versos-de-mim.lofernandes2006.workers.dev/">
+  <title>Lorrane Fernandes | Versos de Mim e romances em construção</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Lorrane Fernandes">
+  <meta property="og:title" content="Lorrane Fernandes — poesia, memória e estações">
+  <meta property="og:description" content="Leia uma amostra de Versos de Mim e conheça os romances As Estações do Coração e As Coisas que Deixamos no Inverno.">
+  <meta property="og:url" content="https://versos-de-mim.lofernandes2006.workers.dev/">
+  <meta property="og:image" content="https://versos-de-mim.lofernandes2006.workers.dev/assets/ireland-temple-bar.jpg">
+  <meta property="og:image:width" content="660">
+  <meta property="og:image:height" content="310">
+  <meta property="og:image:alt" content="Fachada do The Temple Bar, em Dublin, na Irlanda">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lorrane Fernandes — poesia, memória e estações">
+  <meta name="twitter:description" content="Leia uma amostra de Versos de Mim e acompanhe os romances de Lorrane Fernandes.">
+  <meta name="twitter:image" content="https://versos-de-mim.lofernandes2006.workers.dev/assets/ireland-temple-bar.jpg">
+  <meta name="twitter:image:alt" content="Fachada do The Temple Bar, em Dublin, na Irlanda">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://versos-de-mim.lofernandes2006.workers.dev/#autora",
+        "name": "Lorrane Fernandes",
+        "jobTitle": "Escritora",
+        "url": "https://versos-de-mim.lofernandes2006.workers.dev/",
+        "sameAs": ["https://www.instagram.com/words_lo/"]
+      },
+      {
+        "@type": "Book",
+        "@id": "https://versos-de-mim.lofernandes2006.workers.dev/#versos-de-mim",
+        "name": "Versos de Mim",
+        "isbn": "978-65-01-68794-0",
+        "author": {"@id": "https://versos-de-mim.lofernandes2006.workers.dev/#autora"},
+        "inLanguage": "pt-BR",
+        "bookFormat": "https://schema.org/Paperback",
+        "datePublished": "2025",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://loja.uiclap.com/titulo/ua102727",
+          "price": "50.00",
+          "priceCurrency": "BRL"
+        }
+      }
+    ]
+  }
+  </script>
+
   <style>
     :root {
-      --paper: #f7f4ed;
-      --paper-deep: #ede8dc;
+      color-scheme: light;
+      --cream: #f7f4ed;
+      --cream-deep: #eee9df;
+      --paper: #fffdf8;
       --ink: #26372f;
-      --muted: #657169;
+      --muted: #536258;
       --forest: #355748;
-      --forest-dark: #203d31;
-      --sage: #c7d0bc;
-      --rose: #c47b70;
-      --gold: #c5a875;
-      --line: rgba(38, 55, 47, .14);
+      --forest-deep: #203d31;
+      --sage: #dce4d8;
+      --sage-dark: #607864;
+      --rose: #a9564c;
+      --gold: #95723a;
+      --line: rgba(38, 55, 47, .16);
       --serif: "Playfair Display", Georgia, serif;
       --sans: "DM Sans", Arial, sans-serif;
-      --shadow: 0 28px 70px rgba(38, 55, 47, .12);
+      --shadow: 0 20px 55px rgba(31, 54, 42, .11);
+      --measure: 68ch;
     }
+
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); line-height: 1.65; }
-    a { color: inherit; }
+    html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+    body { margin: 0; color: var(--ink); background: var(--cream); font: 16px/1.7 var(--sans); }
     img, svg { display: block; max-width: 100%; }
-    .skip-link { position: absolute; top: -60px; left: 16px; padding: 10px 16px; background: white; z-index: 20; }
-    .skip-link:focus { top: 16px; }
-    .wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
-    .topbar { position: sticky; top: 0; z-index: 10; background: rgba(247, 244, 237, .91); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(38,55,47,.08); }
-    .nav { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .wordmark { text-decoration: none; font: 600 20px/1.1 var(--serif); letter-spacing: -.04em; }
-    .wordmark small { display: block; margin-top: 5px; color: var(--muted); font: 600 9px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; }
-    .nav-links { display: flex; align-items: center; gap: 29px; }
-    .nav-links a { text-decoration: none; color: #4d5c53; font-size: 12px; font-weight: 600; letter-spacing: .03em; }
-    .nav-links a:hover { color: var(--rose); }
-    .nav-cta, .button { display: inline-flex; justify-content: center; align-items: center; gap: 9px; min-height: 46px; padding: 0 20px; border-radius: 999px; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: .035em; transition: transform .2s ease, background .2s ease; }
-    .nav-cta, .button-dark { color: white; background: var(--forest-dark); }
-    .button-dark:hover, .nav-cta:hover { background: var(--forest); transform: translateY(-2px); }
-    .button-light { color: var(--forest-dark); border: 1px solid rgba(32,61,49,.24); background: rgba(255,255,255,.2); }
-    .button-light:hover { background: white; transform: translateY(-2px); }
-    .menu-toggle { display: none; border: 0; background: transparent; color: var(--ink); font: 600 13px var(--sans); }
-    .hero { position: relative; overflow: hidden; padding: 74px 0 84px; }
-    .hero:before { content: ""; position: absolute; width: 620px; height: 620px; top: -300px; left: -260px; border: 1px solid rgba(197,168,117,.22); border-radius: 50%; box-shadow: 0 0 0 46px rgba(197,168,117,.035), 0 0 0 92px rgba(197,168,117,.025); }
-    .hero-grid { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 58px; }
-    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--forest); font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
-    .eyebrow:before { content: ""; width: 24px; height: 1px; background: var(--rose); }
-    h1, h2, h3, p { margin-top: 0; }
-    h1 { max-width: 620px; margin: 21px 0 19px; font: 500 clamp(48px, 6.7vw, 84px)/1.03 var(--serif); letter-spacing: -.055em; }
+    img { height: auto; }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: 3px solid #8a4f29; outline-offset: 4px; }
+    ::selection { color: white; background: var(--forest); }
+
+    .skip-link { position: fixed; z-index: 100; top: 10px; left: 10px; transform: translateY(-160%); padding: 10px 14px; border-radius: 4px; color: white; background: var(--forest-deep); }
+    .skip-link:focus { transform: translateY(0); }
+    .shell { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--forest); font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    .eyebrow::before { width: 24px; height: 1px; background: var(--rose); content: ""; }
+    h1, h2, h3, p, blockquote { margin-top: 0; }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 500; }
+    h1 { max-width: 760px; margin-bottom: 22px; font-size: clamp(3rem, 7vw, 6rem); line-height: 1.02; letter-spacing: -.055em; }
     h1 em { color: var(--rose); font-weight: 400; }
-    .hero-copy { max-width: 490px; color: var(--muted); font-size: 15px; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 27px; }
-    .hero-note { display: flex; align-items: center; gap: 12px; margin-top: 43px; color: var(--muted); font-size: 11px; }
-    .hero-note span { width: 34px; height: 1px; background: var(--gold); }
-    .scene { position: relative; min-height: 490px; display: grid; place-items: center; }
-    .scene-halo { position: absolute; width: min(450px, 90%); aspect-ratio: 1; border: 1px solid rgba(53,87,72,.14); border-radius: 50%; }
-    .scene-halo:before, .scene-halo:after { content: ""; position: absolute; inset: 22px; border: 1px solid rgba(196,123,112,.2); border-radius: 50%; }
-    .scene-halo:after { inset: 46px; border-color: rgba(197,168,117,.2); }
-    .book { position: relative; width: 235px; height: 340px; transform: rotate(-7deg); perspective: 900px; filter: drop-shadow(20px 26px 18px rgba(28,49,39,.2)); }
-    .book-front { position: absolute; inset: 0; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 31px 22px 25px; color: #344a43; text-align: center; background: linear-gradient(155deg, #e1e5df 0%, #c9d5d3 45%, #e9ded5 100%); border: 1px solid rgba(255,255,255,.75); border-radius: 2px 8px 8px 2px; }
-    .book-front:before { content: ""; position: absolute; inset: 12px; border: 1px solid rgba(255,255,255,.58); }
-    .book-front:after { content: ""; position: absolute; width: 240px; height: 150px; bottom: -29px; left: -3px; border-radius: 50% 50% 0 0; background: radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.5), transparent 65%); }
-    .cover-flower { position: absolute; top: 95px; left: 50%; width: 100px; height: 100px; transform: translateX(-50%); }
-    .cover-flower i { position: absolute; left: 43px; top: 8px; width: 15px; height: 39px; border-radius: 90% 90% 45% 45%; background: rgba(201,147,145,.68); transform-origin: 50% 42px; }
-    .cover-flower i:nth-child(2) { transform: rotate(60deg); }.cover-flower i:nth-child(3) { transform: rotate(120deg); }.cover-flower i:nth-child(4) { transform: rotate(180deg); }.cover-flower i:nth-child(5) { transform: rotate(240deg); }.cover-flower i:nth-child(6) { transform: rotate(300deg); }
-    .cover-flower b { position: absolute; top: 41px; left: 42px; width: 17px; height: 17px; border-radius: 50%; background: #d2af75; }
-    .cover-stem { position: absolute; left: 50%; top: 176px; width: 1px; height: 61px; background: rgba(73,105,81,.6); transform: rotate(8deg); }
-    .cover-leaf { position: absolute; left: 118px; top: 195px; width: 20px; height: 10px; border-radius: 100% 0 100% 0; background: rgba(104,133,103,.53); transform: rotate(-20deg); }
-    .cover-top, .cover-bottom { position: relative; z-index: 1; font-size: 7px; letter-spacing: .23em; text-transform: uppercase; }
-    .cover-title { position: relative; z-index: 1; margin-top: 95px; font: 500 25px/1.05 var(--serif); letter-spacing: -.04em; }
-    .cover-subtitle { position: relative; z-index: 1; font: italic 10px var(--serif); }
-    .book-spine { position: absolute; width: 17px; top: 2px; bottom: 2px; left: -16px; background: linear-gradient(90deg,#a9b9b5,#dae0da 65%,#b1bdb4); transform: skewY(-2deg); box-shadow: inset -3px 0 4px rgba(40,60,48,.13); }
-    .scene-label { position: absolute; right: 2%; bottom: 6%; max-width: 135px; color: var(--muted); font: italic 15px/1.3 var(--serif); text-align: right; }
-    .floating-leaf { position: absolute; color: var(--rose); opacity: .65; font: 30px var(--serif); }
-    .leaf-one { top: 15%; right: 13%; transform: rotate(32deg); }.leaf-two { left: 8%; bottom: 20%; color: var(--gold); transform: rotate(-28deg); }
-    .section { padding: 100px 0; }
-    .section-head { max-width: 670px; margin-bottom: 48px; }
-    .section-head h2 { margin: 14px 0 12px; font: 500 clamp(36px, 4.4vw, 55px)/1.1 var(--serif); letter-spacing: -.045em; }
-    .section-head p { max-width: 580px; margin-bottom: 0; color: var(--muted); font-size: 14px; }
-    .poetry { background: #eceee8; }
-    .poetry-grid { display: grid; grid-template-columns: .82fr 1.18fr; align-items: center; gap: 82px; }
-    .poetry-art { min-height: 395px; display: grid; place-items: center; position: relative; background: #dfe5df; overflow: hidden; }
-    .poetry-art:before { content: ""; position: absolute; width: 310px; height: 310px; border: 1px solid rgba(53,87,72,.17); border-radius: 50%; box-shadow: 0 0 0 26px rgba(255,255,255,.13), 0 0 0 52px rgba(255,255,255,.1); }
-    .mini-book { position: relative; width: 178px; height: 265px; padding: 25px 14px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; color: #344a43; text-align: center; background: linear-gradient(150deg,#e6e8e2,#cbd8d7 56%,#e9ddd5); box-shadow: 12px 17px 22px rgba(38,55,47,.2); transform: rotate(5deg); }
-    .mini-book:before { content: ""; position: absolute; inset: 8px; border: 1px solid rgba(255,255,255,.64); }
-    .mini-book strong { position: relative; z-index: 1; margin-top: 72px; font: 500 21px/1.05 var(--serif); }
-    .mini-book small { position: relative; z-index: 1; font-size: 7px; letter-spacing: .18em; text-transform: uppercase; }
-    .mini-flower { position: absolute; top: 62px; left: calc(50% - 17px); color: #c58d8a; font-size: 33px; }
-    .book-text h3 { margin: 17px 0; font: 500 37px var(--serif); letter-spacing: -.04em; }
-    .book-text p { max-width: 510px; color: var(--muted); font-size: 14px; }
-    .book-text .meta { margin: 23px 0; color: #69776d; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
-    .small-quote { margin: 25px 0 28px; padding-left: 18px; border-left: 1px solid var(--rose); color: var(--forest); font: italic 18px/1.45 var(--serif); }
-    .season-intro { display: flex; justify-content: space-between; align-items: end; gap: 36px; }
-    .season-intro .section-head { margin-bottom: 38px; }
-    .season-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .season { position: relative; min-height: 215px; padding: 29px 25px 24px 0; }
-    .season + .season { padding-left: 25px; border-left: 1px solid var(--line); }
-    .season-number { color: var(--rose); font-size: 10px; letter-spacing: .18em; }
-    .season h3 { margin: 21px 0 9px; font: 500 25px var(--serif); }
-    .season p { margin: 0; color: var(--muted); font-size: 12px; }
-    .season-mark { position: absolute; top: 24px; right: 19px; color: var(--gold); font: 28px var(--serif); opacity: .8; }
-    .winter-book { background: #e9eeec; }
-    .winter-book .section-head { margin-bottom: 35px; }
-    .character-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
-    .character-card { overflow: hidden; background: rgba(255,255,255,.62); border: 1px solid rgba(38,55,47,.08); }
-    .character-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center; background: #d6ddda; }
-    .character-card h3 { margin: 0; padding: 15px 14px 17px; font: 500 19px/1.2 var(--serif); }
-    .ireland { position: relative; overflow: hidden; color: #f7f4ed; background: var(--forest-dark); }
-    .ireland:after { content: ""; position: absolute; width: 480px; height: 480px; right: -140px; top: -210px; border: 1px solid rgba(255,255,255,.1); border-radius: 50%; box-shadow: 0 0 0 42px rgba(255,255,255,.025), 0 0 0 84px rgba(255,255,255,.02); }
-    .ireland .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 72px; }
-    .ireland .eyebrow { color: #d7c499; }
-    .ireland h2 { margin: 17px 0; font: 500 clamp(38px, 5vw, 59px)/1.1 var(--serif); letter-spacing: -.04em; }
-    .ireland p { max-width: 490px; color: rgba(247,244,237,.72); font-size: 14px; }
-    .landscape { position: relative; height: 330px; overflow: hidden; margin: 0; background: #315440; }
-    .landscape img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-    .landscape:after { content: ""; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(0,0,0,.55)); pointer-events: none; }
-    .landscape-caption { position: absolute; z-index: 1; left: 19px; bottom: 15px; color: #fff; font: italic 14px var(--serif); text-shadow: 0 1px 8px rgba(0,0,0,.45); }
-    .author { background: #f1ede4; }
-    .author-inner { display: grid; grid-template-columns: 150px 1fr; gap: 38px; align-items: start; max-width: 800px; }
-    .author-monogram { width: 128px; aspect-ratio: 1; display: grid; place-items: center; border: 1px solid rgba(53,87,72,.27); border-radius: 50%; color: var(--forest); font: italic 45px var(--serif); }
-    .author h2 { margin: 14px 0 15px; font: 500 40px var(--serif); }
-    .author p { color: var(--muted); font-size: 14px; }
-    .closing { padding: 78px 0; text-align: center; background: #e6ebe4; }
-    .closing blockquote { max-width: 720px; margin: 0 auto 20px; color: var(--forest-dark); font: italic 34px/1.25 var(--serif); letter-spacing: -.025em; }
-    .closing p { color: var(--muted); font-size: 12px; }
-    footer { padding: 34px 0; color: rgba(247,244,237,.76); background: #203d31; }
-    .footer-row { display: flex; justify-content: space-between; align-items: center; gap: 22px; }
-    .footer-brand { color: white; font: 500 19px var(--serif); }
-    footer p { margin: 4px 0 0; font-size: 10px; }
-    .footer-link { color: #e7d8b5; font-size: 11px; text-decoration: none; }
-    .reveal { animation: rise .75s both; }
-    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
-    @media (max-width: 800px) {
-      .wrap { width: min(100% - 36px, 620px); }
-      .nav { min-height: 70px; }
-      .menu-toggle { display: block; }
+    h2 { margin-bottom: 16px; font-size: clamp(2.3rem, 4.4vw, 4rem); line-height: 1.08; letter-spacing: -.045em; }
+    h3 { font-size: 1.55rem; line-height: 1.2; }
+    p { max-width: var(--measure); }
+    .muted { color: var(--muted); }
+    .section { padding: clamp(72px, 9vw, 112px) 0; }
+    .section-intro { max-width: 720px; margin-bottom: 42px; }
+    .section-intro p { margin-bottom: 0; color: var(--muted); }
+
+    .site-header { position: sticky; z-index: 20; top: 0; border-bottom: 1px solid rgba(38,55,47,.1); background: rgba(247,244,237,.96); }
+    .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+    .brand { text-decoration: none; font: 600 1.17rem/1.15 var(--serif); letter-spacing: -.035em; }
+    .brand small { display: block; margin-top: 4px; color: var(--muted); font: 700 .58rem/1.3 var(--sans); letter-spacing: .17em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 23px; }
+    .nav-links a { text-decoration: none; font-size: .8rem; font-weight: 600; }
+    .nav-links a:hover { color: var(--rose); }
+    .menu-button { display: none; min-width: 44px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: transparent; font-weight: 700; }
+
+    .button { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; gap: 10px; padding: 12px 21px; border: 1px solid transparent; border-radius: 999px; text-align: center; text-decoration: none; font-size: .91rem; font-weight: 700; transition: background-color .18s ease, transform .18s ease; }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { color: white; background: var(--forest-deep); }
+    .button-primary:hover { background: #315a45; }
+    .button-secondary { border-color: rgba(32,61,49,.35); color: var(--forest-deep); background: transparent; }
+    .button-secondary:hover { background: white; }
+    .button-small { min-height: 42px; padding: 9px 16px; font-size: .84rem; }
+
+    .hero { position: relative; overflow: hidden; padding: clamp(70px, 10vw, 132px) 0 82px; }
+    .hero::before { position: absolute; top: -340px; left: -230px; width: 620px; aspect-ratio: 1; border: 1px solid rgba(149,114,58,.19); border-radius: 50%; box-shadow: 0 0 0 42px rgba(149,114,58,.035), 0 0 0 84px rgba(149,114,58,.025); content: ""; }
+    .hero::after { position: absolute; right: -170px; bottom: -280px; width: 520px; aspect-ratio: 1; border: 1px solid rgba(169,86,76,.18); border-radius: 50%; content: ""; }
+    .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.12fr .88fr; align-items: center; gap: 52px; }
+    .hero-copy { max-width: 560px; color: var(--muted); font-size: clamp(1rem, 1.6vw, 1.12rem); }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 30px; }
+    .hero-note { display: flex; align-items: center; gap: 11px; margin-top: 27px; color: var(--muted); font-size: .8rem; }
+    .hero-note::before { width: 30px; height: 1px; background: var(--gold); content: ""; }
+    .book-art { position: relative; display: grid; min-height: 450px; place-items: center; }
+    .book-orbit { position: absolute; width: min(410px, 95%); aspect-ratio: 1; border: 1px solid rgba(53,87,72,.2); border-radius: 50%; }
+    .book-orbit::before, .book-orbit::after { position: absolute; inset: 22px; border: 1px solid rgba(169,86,76,.19); border-radius: inherit; content: ""; }
+    .book-orbit::after { inset: 45px; border-color: rgba(149,114,58,.2); }
+    .book-cover { position: relative; display: flex; width: 236px; height: 334px; flex-direction: column; align-items: center; justify-content: space-between; overflow: hidden; padding: 28px 20px 24px; transform: rotate(-5deg); border: 1px solid rgba(255,255,255,.8); border-radius: 3px 10px 10px 3px; color: #344a43; background: linear-gradient(150deg,#e6e9e1,#cbd8d3 57%,#eaded5); box-shadow: 16px 24px 35px rgba(31,54,42,.2); text-align: center; }
+    .book-cover::before { position: absolute; inset: 12px; border: 1px solid rgba(255,255,255,.7); content: ""; }
+    .cover-author, .cover-edition { position: relative; z-index: 1; font-size: .57rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    .cover-flower { position: absolute; top: 83px; width: 84px; height: 84px; color: #a9564c; font-size: 73px; line-height: 1; }
+    .cover-title { position: relative; z-index: 1; margin: 118px 0 0; font: 500 1.9rem/1 var(--serif); }
+    .cover-subtitle { position: relative; z-index: 1; margin-top: 8px; font: italic .65rem var(--serif); }
+    .hero-label { position: absolute; right: 0; bottom: 7%; max-width: 125px; color: var(--muted); font: italic 1rem/1.4 var(--serif); text-align: right; }
+
+    .book-section { background: var(--sage); }
+    .book-layout { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 64px; }
+    .book-copy p { color: #425247; }
+    .book-quote { margin: 24px 0; padding-left: 18px; border-left: 2px solid var(--rose); color: var(--forest-deep); font: italic 1.25rem/1.5 var(--serif); }
+    .book-facts { padding: clamp(24px, 4vw, 38px); border: 1px solid rgba(32,61,49,.17); background: var(--paper); box-shadow: var(--shadow); }
+    .facts-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 22px; }
+    .facts-top h3 { margin: 6px 0 0; font-size: 1.85rem; }
+    .price { flex: 0 0 auto; color: var(--forest-deep); font: 600 1.6rem/1.1 var(--serif); }
+    .facts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; margin: 0 0 24px; border-top: 1px solid var(--line); }
+    .fact { display: flex; justify-content: space-between; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+    .fact dt { color: var(--muted); font-size: .81rem; }
+    .fact dd { margin: 0; font-size: .86rem; font-weight: 700; text-align: right; }
+    .facts-note { margin: 14px 0 0; color: var(--muted); font-size: .76rem; }
+
+    .sample-section { background: var(--paper); }
+    .sample-grid { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 56px; }
+    .sample-card { position: relative; min-height: 330px; display: grid; align-items: center; padding: clamp(28px, 5vw, 58px); border: 1px solid rgba(53,87,72,.16); background: #f1eee6; }
+    .sample-card::before { position: absolute; top: 17px; right: 19px; color: var(--gold); font: 2.6rem var(--serif); content: "✿"; opacity: .75; }
+    .poem { margin: 0; white-space: pre-line; color: var(--forest-deep); font: italic clamp(1.45rem, 3vw, 2rem)/1.6 var(--serif); }
+    .poem-title { margin-bottom: 13px; color: var(--rose); font-size: .73rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    .poem-note { margin: 18px 0 0; color: var(--muted); font-size: .75rem; }
+
+    .reviews { background: #eee9df; }
+    .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .review-card { min-height: 205px; padding: 25px; border: 1px dashed rgba(53,87,72,.35); background: rgba(255,253,248,.6); }
+    .review-mark { color: var(--gold); font: italic 2rem var(--serif); }
+    .review-card blockquote { margin: 10px 0 20px; color: #46564a; font: italic 1.05rem/1.55 var(--serif); }
+    .review-byline { color: var(--muted); font-size: .76rem; font-weight: 700; }
+    .review-placeholder { color: var(--muted); font-size: .7rem; }
+
+    .projects { background: var(--paper); }
+    .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .project-card { display: flex; min-height: 260px; flex-direction: column; padding: clamp(24px, 4vw, 38px); border: 1px solid var(--line); background: #faf8f2; }
+    .project-card.featured { color: var(--cream); background: var(--forest-deep); }
+    .project-card.featured .eyebrow { color: #e4d4b0; }
+    .project-card.featured p, .project-card.featured .project-status { color: #f4f1e8; }
+    .project-card h3 { margin: 14px 0 10px; font-size: 1.8rem; }
+    .project-card p { color: var(--muted); }
+    .project-status { margin-top: auto; padding-top: 16px; color: var(--forest); font-size: .8rem; font-weight: 700; }
+    .season-timeline { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 36px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .season { position: relative; min-height: 178px; padding: 24px 18px 24px 0; }
+    .season + .season { padding-left: 18px; border-left: 1px solid var(--line); }
+    .season-index { color: var(--rose); font-size: .67rem; font-weight: 700; letter-spacing: .14em; }
+    .season h4 { margin: 12px 0 7px; font: 500 1.45rem var(--serif); }
+    .season p { margin: 0; color: var(--muted); font-size: .78rem; }
+    .date-note { margin: 16px 0 0; color: var(--muted); font-size: .78rem; }
+
+    .characters-section { background: #e7ece5; }
+    .character-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 18px; }
+    .character-card { overflow: hidden; border: 1px solid rgba(38,55,47,.1); background: var(--paper); }
+    .character-photo { width: 100%; aspect-ratio: 1; object-fit: cover; background: #d6ddda; }
+    .character-info { padding: 15px 15px 17px; }
+    .family-label { display: block; margin-bottom: 5px; color: var(--rose); font-size: .65rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .character-info h3 { margin: 0 0 7px; font-size: 1.22rem; }
+    .character-line { min-height: 42px; margin: 0 0 12px; color: var(--muted); font-size: .78rem; line-height: 1.5; }
+    .character-open { min-height: 42px; padding: 7px 0; border: 0; color: var(--forest-deep); background: transparent; font-size: .8rem; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+    .editorial-placeholder { margin-top: 14px; color: var(--muted); font-size: .75rem; }
+
+    .relation-section { padding-top: 0; background: #e7ece5; }
+    .relation-map { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 18px; padding: clamp(20px, 4vw, 38px); border: 1px solid rgba(38,55,47,.15); background: var(--paper); }
+    .family-node { padding: 18px; border: 1px solid var(--line); background: #f5f2ea; }
+    .family-node h3 { margin-bottom: 12px; font-size: 1.45rem; }
+    .family-node ul { margin: 0; padding-left: 19px; color: var(--muted); font-size: .83rem; }
+    .relation-link { max-width: 150px; color: var(--rose); font: italic 1.08rem/1.3 var(--serif); text-align: center; }
+    .relation-link::before, .relation-link::after { display: block; width: 40px; height: 1px; margin: 0 auto 10px; background: var(--gold); content: ""; }
+    .relation-link::after { margin: 10px auto 0; }
+    .fagundes-note { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: .8rem; }
+
+    .ireland { color: var(--cream); background: var(--forest-deep); }
+    .ireland-grid { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 58px; }
+    .ireland .eyebrow { color: #e5d5b2; }
+    .ireland h2 { max-width: 560px; }
+    .ireland-copy { color: #f0efe8; }
+    .ireland-photo { position: relative; overflow: hidden; }
+    .ireland-photo img { width: 100%; aspect-ratio: 660 / 310; object-fit: cover; }
+    .ireland-photo figcaption { padding: 10px 0 0; color: #f3eee1; font-size: .76rem; }
+    .story-fragment { margin: 23px 0 0; padding-left: 18px; border-left: 1px solid #d9c99e; color: #fffdf8; font: italic 1.12rem/1.6 var(--serif); }
+    .editorial-note { display: block; margin-top: 9px; color: #e3e6df; font-size: .68rem; }
+
+    .newsletter { position: relative; overflow: hidden; background: #dfe6dd; }
+    .newsletter-grid { display: grid; grid-template-columns: 1fr .9fr; align-items: center; gap: 60px; }
+    .signup-card { padding: clamp(24px, 4vw, 38px); border: 1px solid rgba(38,55,47,.14); background: var(--paper); box-shadow: var(--shadow); }
+    .signup-card label { display: block; margin-bottom: 7px; font-size: .81rem; font-weight: 700; }
+    .email-input { width: 100%; min-height: 50px; margin-bottom: 14px; padding: 11px 14px; border: 1px solid #68786e; border-radius: 4px; color: var(--ink); background: white; }
+    .consent-row { display: grid; grid-template-columns: 22px 1fr; align-items: start; gap: 10px; margin: 12px 0 20px; }
+    .consent-row input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--forest); }
+    .consent-row label { margin: 0; color: var(--muted); font-size: .75rem; font-weight: 400; }
+    .privacy-note, .form-status { margin: 12px 0 0; color: var(--muted); font-size: .72rem; }
+    .form-status { min-height: 1.6em; font-weight: 700; }
+    .newsletter-art { color: var(--forest); font: italic clamp(2rem, 4vw, 3.5rem)/1.2 var(--serif); }
+    .newsletter-art span { display: block; margin-top: 14px; color: var(--muted); font: .85rem/1.6 var(--sans); }
+
+    .author-section { background: #f0ece3; }
+    .author-grid { display: grid; grid-template-columns: 220px 1fr; align-items: center; gap: 46px; max-width: 920px; }
+    .author-portrait { position: relative; display: grid; width: 200px; aspect-ratio: 4 / 5; place-items: center; overflow: hidden; border: 1px solid rgba(53,87,72,.3); color: var(--forest); background: radial-gradient(circle at 50% 36%,rgba(255,255,255,.8) 0 18%,transparent 19%), linear-gradient(160deg,#e6e8df,#d9c9bf 70%,#b7c7b5); }
+    .author-portrait::before { position: absolute; right: -30px; bottom: -60px; left: -30px; height: 54%; border-radius: 50% 50% 0 0; background: rgba(53,87,72,.17); content: ""; }
+    .author-portrait span { position: relative; z-index: 1; padding: 6px 10px; border: 1px solid rgba(53,87,72,.3); border-radius: 50%; background: rgba(247,244,237,.82); font: italic 2.2rem var(--serif); }
+    .portrait-note { margin: 8px 0 0; color: var(--muted); font-size: .68rem; text-align: center; }
+    .author-bio { color: var(--muted); }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .contact-link { color: var(--forest-deep); font-size: .85rem; font-weight: 700; text-underline-offset: 4px; }
+
+    .closing { padding: 74px 0; background: var(--cream-deep); text-align: center; }
+    .closing blockquote { max-width: 800px; margin: 0 auto 14px; color: var(--forest-deep); font: italic clamp(1.7rem, 4vw, 2.7rem)/1.3 var(--serif); }
+    .closing p { margin: auto; color: var(--muted); font-size: .82rem; }
+    .site-footer { padding: 30px 0; color: #f5f2ea; background: #1e382d; }
+    .footer-row { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .footer-row p { margin: 0; font-size: .76rem; }
+    .footer-links { display: flex; gap: 18px; }
+    .footer-links a { color: #f5f2ea; font-size: .78rem; text-underline-offset: 3px; }
+
+    dialog { width: min(520px, calc(100% - 28px)); padding: 0; border: 1px solid rgba(38,55,47,.2); color: var(--ink); background: var(--paper); box-shadow: 0 22px 80px rgba(0,0,0,.28); }
+    dialog::backdrop { background: rgba(22,37,29,.7); }
+    .dialog-inner { padding: 28px; }
+    .dialog-close { float: right; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: transparent; font-size: 1.2rem; cursor: pointer; }
+    .dialog-inner h2 { padding-top: 24px; font-size: 2rem; }
+    .dialog-family { color: var(--rose); font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .dialog-inner p { color: var(--muted); }
+
+    @media (max-width: 900px) {
+      .nav-links { gap: 14px; }
+      .nav-links a { font-size: .75rem; }
+      .hero-grid { gap: 28px; }
+      .book-layout, .sample-grid, .ireland-grid, .newsletter-grid { gap: 34px; }
+      .character-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    }
+    @media (max-width: 760px) {
+      .shell { width: min(100% - 36px, 620px); }
+      .menu-button { display: inline-flex; align-items: center; justify-content: center; }
       .nav-cta { display: none; }
-      .nav-links { display: none; position: absolute; top: 70px; left: 0; right: 0; padding: 20px 24px 24px; flex-direction: column; align-items: flex-start; gap: 18px; background: var(--paper); border-bottom: 1px solid var(--line); }
-      .nav-links.open { display: flex; }
-      .hero { padding: 48px 0 62px; }
-      .hero-grid, .poetry-grid, .ireland .wrap { grid-template-columns: 1fr; gap: 34px; }
-      .scene { min-height: 400px; }
-      .book { transform: scale(.9) rotate(-7deg); }
-      .hero-note { margin-top: 26px; }
-      .section { padding: 72px 0; }
-      .poetry-grid { gap: 42px; }
-      .poetry-art { min-height: 340px; }
-      .season-grid { grid-template-columns: repeat(2, 1fr); }
-      .season { min-height: 185px; padding-left: 0; }
-      .season + .season { padding-left: 18px; }
-      .season:nth-child(3) { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); }
-      .season:nth-child(4) { border-top: 1px solid var(--line); }
-      .character-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-      .character-card h3 { padding: 12px 10px 14px; font-size: 17px; }
-      .ireland .wrap { gap: 30px; }
-      .landscape { height: 270px; }
-      .author-inner { grid-template-columns: 92px 1fr; gap: 22px; }
-      .author-monogram { width: 86px; font-size: 34px; }
+      .nav-links { position: absolute; top: 100%; right: 0; left: 0; display: none; align-items: stretch; flex-direction: column; gap: 0; padding: 8px 20px 18px; border-bottom: 1px solid var(--line); background: var(--cream); }
+      .nav-links.is-open { display: flex; }
+      .nav-links a { min-height: 46px; display: flex; align-items: center; font-size: .9rem; }
+      .hero { padding-top: 64px; }
+      .hero-grid, .book-layout, .sample-grid, .ireland-grid, .newsletter-grid { grid-template-columns: 1fr; }
+      .hero-grid { gap: 14px; }
+      .book-art { min-height: 360px; }
+      .book-cover { transform: rotate(-4deg) scale(.92); }
+      .hero-label { right: 4%; bottom: 1%; }
+      .book-layout { gap: 35px; }
+      .sample-grid { gap: 26px; }
+      .review-grid { grid-template-columns: 1fr 1fr; }
+      .project-grid { grid-template-columns: 1fr; }
+      .character-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .ireland-grid { gap: 25px; }
+      .newsletter-grid { gap: 27px; }
+      .author-grid { grid-template-columns: 150px 1fr; gap: 25px; }
+      .author-portrait { width: 145px; }
     }
     @media (max-width: 480px) {
-      .wrap { width: calc(100% - 32px); }
-      .wordmark { font-size: 18px; }
-      h1 { font-size: 49px; }
-      .hero-copy { font-size: 14px; }
-      .hero-actions .button { flex: 1; padding-inline: 12px; }
-      .scene { min-height: 355px; }
-      .scene-label { right: 0; bottom: 1%; font-size: 13px; }
-      .book { transform: scale(.8) rotate(-7deg); }
-      .section-head h2 { font-size: 38px; }
-      .season { padding-right: 12px; }
-      .season + .season { padding-left: 14px; }
-      .season h3 { font-size: 22px; }
-      .season p { font-size: 11px; }
-      .character-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-      .character-card h3 { font-size: 16px; }
-      .author-inner { grid-template-columns: 1fr; }
-      .author-monogram { width: 74px; font-size: 30px; }
-      .closing blockquote { font-size: 27px; }
+      html { scroll-padding-top: 76px; }
+      .shell { width: calc(100% - 32px); }
+      .nav { min-height: 68px; }
+      .brand { font-size: 1.02rem; }
+      .hero { padding-top: 52px; }
+      h1 { font-size: clamp(2.75rem, 13vw, 3.55rem); }
+      h2 { font-size: clamp(2.25rem, 10vw, 3rem); }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .hero-actions .button { width: 100%; }
+      .book-art { min-height: 322px; }
+      .book-cover { transform: rotate(-4deg) scale(.82); }
+      .hero-label { right: 0; bottom: -1%; max-width: 112px; font-size: .85rem; }
+      .facts-top { flex-direction: column; }
+      .facts-grid { grid-template-columns: 1fr; }
+      .fact { padding: 11px 0; }
+      .sample-card { min-height: 270px; padding: 25px 21px; }
+      .review-grid { grid-template-columns: 1fr; }
+      .review-card { min-height: 160px; }
+      .season-timeline { grid-template-columns: 1fr 1fr; }
+      .season { min-height: 158px; padding: 20px 10px 18px 0; }
+      .season + .season { padding-left: 12px; }
+      .season:nth-child(3) { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); }
+      .season:nth-child(4) { border-top: 1px solid var(--line); }
+      .relation-map { grid-template-columns: 1fr; }
+      .relation-link { max-width: none; }
+      .relation-link::before, .relation-link::after { width: 1px; height: 20px; margin: 6px auto; }
+      .fagundes-note { grid-column: 1; }
+      .author-grid { grid-template-columns: 1fr; }
+      .author-portrait { width: 132px; aspect-ratio: 1; }
+      .portrait-note { width: 132px; text-align: left; }
       .footer-row { align-items: flex-start; flex-direction: column; }
+      .footer-links { flex-direction: column; gap: 8px; }
+      .button { width: 100%; }
+      .dialog-inner { padding: 22px; }
     }
-    @media (prefers-reduced-motion: reduce) { *, *:before, *:after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
   </style>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <header class="topbar">
-    <nav class="nav wrap" aria-label="Navegação principal">
-      <a class="wordmark" href="#inicio">Lorrane Fernandes<small>palavras que florescem</small></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Navegação principal">
+      <a class="brand" href="#inicio">Lorrane Fernandes<small>escritora</small></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
       <div class="nav-links" id="nav-links">
         <a href="#livro">Versos de Mim</a>
-        <a href="#romance">O romance</a>
-        <a href="#as-coisas">As Coisas do Inverno</a>
-        <a href="#irlanda">A Irlanda</a>
+        <a href="#poema">Leia um poema</a>
+        <a href="#romances">Romances</a>
+        <a href="#personagens">Personagens</a>
         <a href="#autora">A autora</a>
       </div>
-      <a class="nav-cta" href="https://loja.uiclap.com/titulo/ua102727" target="_blank" rel="noopener noreferrer">Encontrar o livro <span aria-hidden="true">↗</span></a>
+      <a class="button button-primary button-small nav-cta" href="https://loja.uiclap.com/titulo/ua102727" target="_blank" rel="noopener noreferrer">Comprar o livro ↗</a>
     </nav>
   </header>
 
   <main id="conteudo">
-    <section class="hero" id="inicio">
-      <div class="wrap hero-grid">
-        <div class="reveal">
-          <span class="eyebrow">Um lugar para histórias</span>
-          <h1>Algumas histórias florescem <em>em todas as estações.</em></h1>
-          <p class="hero-copy">Entre versos íntimos e um romance que atravessa o tempo, cada página abre espaço para sentir, lembrar e recomeçar.</p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#livro">Conheça meus livros <span aria-hidden="true">↓</span></a>
-            <a class="button button-light" href="#romance">Entre na história</a>
-          </div>
-          <div class="hero-note"><span></span> Poesia, memória e os caminhos do coração</div>
-        </div>
-        <div class="scene" aria-label="Representação artística do livro Versos de Mim">
-          <div class="scene-halo"></div>
-          <span class="floating-leaf leaf-one" aria-hidden="true">✿</span>
-          <span class="floating-leaf leaf-two" aria-hidden="true">✧</span>
-          <div class="book" aria-hidden="true">
-            <div class="book-spine"></div>
-            <div class="book-front">
-              <span class="cover-top">Lorrane Fernandes</span>
-              <div class="cover-flower"><i></i><i></i><i></i><i></i><i></i><i></i><b></b></div>
-              <span class="cover-stem"></span><span class="cover-leaf"></span>
-              <strong class="cover-title">Versos<br>de Mim</strong>
-              <span class="cover-subtitle">poemas sobre ser, sentir e florescer</span>
-              <span class="cover-bottom">Poesia • edição física</span>
-            </div>
-          </div>
-          <p class="scene-label">Palavras guardadas<br>como flores entre páginas</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section poetry" id="livro">
-      <div class="wrap poetry-grid">
-        <div class="poetry-art" role="img" aria-label="Ilustração delicada de um livro de poesia com uma flor">
-          <div class="mini-book"><small>Lorrane Fernandes</small><span class="mini-flower" aria-hidden="true">✿</span><strong>Versos<br>de Mim</strong><small>poemas sobre ser, sentir e florescer</small></div>
-        </div>
-        <div class="book-text">
-          <span class="eyebrow">Minha primeira obra publicada</span>
-          <h3>Versos de Mim</h3>
-          <p class="meta">Poesia · livro físico</p>
-          <p>Uma coletânea sobre ser, sentir e florescer. Poemas que acompanham os movimentos da vida — os dias de descoberta, as saudades, as mudanças e a coragem tranquila de começar de novo.</p>
-          <blockquote class="small-quote">“Há partes de nós que só encontram voz quando viram palavra.”</blockquote>
-          <a class="button button-dark" href="https://loja.uiclap.com/titulo/ua102727" target="_blank" rel="noopener noreferrer">Ver na UICLAP <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="romance">
-      <div class="wrap">
-        <div class="season-intro">
-          <div class="section-head">
-            <span class="eyebrow">Um romance em construção</span>
-            <h2>As Estações do Coração</h2>
-            <p>Uma história pensada para acompanhar o tempo como ele merece: com mudanças, lembranças e sentimentos que amadurecem a cada estação.</p>
-          </div>
-        </div>
-        <div class="season-grid" aria-label="As quatro estações que inspiram o romance">
-          <article class="season"><span class="season-number">01 / FLORESCER</span><span class="season-mark" aria-hidden="true">✿</span><h3>Primavera</h3><p>O início de algo novo, quando o coração volta a abrir espaço.</p></article>
-          <article class="season"><span class="season-number">02 / PERMANECER</span><span class="season-mark" aria-hidden="true">☼</span><h3>Verão</h3><p>Afeto em sua luz plena: vivo, generoso e impossível de esconder.</p></article>
-          <article class="season"><span class="season-number">03 / TRANSFORMAR</span><span class="season-mark" aria-hidden="true">❧</span><h3>Outono</h3><p>O que muda também ensina; algumas lembranças criam raízes.</p></article>
-          <article class="season"><span class="season-number">04 / RECOMEÇAR</span><span class="season-mark" aria-hidden="true">✧</span><h3>Inverno</h3><p>No silêncio, certas histórias encontram o caminho de volta.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section winter-book" id="as-coisas">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">Um novo livro</span>
-          <h2>As Coisas que Deixamos no Inverno</h2>
-          <p>Conheça alguns dos personagens que fazem parte desta história.</p>
-        </div>
-        <div class="character-grid" aria-label="Personagens de As Coisas que Deixamos no Inverno">
-          <article class="character-card"><img src="assets/characters/augusto-valenca.webp" alt="Augusto Valença" loading="lazy"><h3>Augusto Valença</h3></article>
-          <article class="character-card"><img src="assets/characters/celeste-fagundes.webp" alt="Dona Celeste Fagundes" loading="lazy"><h3>Dona Celeste Fagundes</h3></article>
-          <article class="character-card"><img src="assets/characters/marina-duarte.webp" alt="Marina Duarte" loading="lazy"><h3>Marina Duarte</h3></article>
-          <article class="character-card"><img src="assets/characters/tomas-valenca.webp" alt="Tomás Valença" loading="lazy"><h3>Tomás Valença</h3></article>
-          <article class="character-card"><img src="assets/characters/benicio-duarte.webp" alt="Benício Duarte" loading="lazy"><h3>Benício Duarte</h3></article>
-          <article class="character-card"><img src="assets/characters/elena-valenca.webp" alt="Elena Valença" loading="lazy"><h3>Elena Valença</h3></article>
-          <article class="character-card"><img src="assets/characters/isabel-valenca.webp" alt="Isabel Valença" loading="lazy"><h3>Isabel Valença</h3></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section ireland" id="irlanda">
-      <div class="wrap">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
         <div>
-          <span class="eyebrow">Paisagem de uma história</span>
-          <h2>Irlanda: onde a memória encontra o caminho.</h2>
-          <p>Campos verdes, casas de pedra e caminhos antigos compõem o horizonte deste universo romântico. Um lugar onde cada estação guarda uma lembrança — e cada caminho pode levar a uma nova página.</p>
+          <span class="eyebrow">Poesia para os dias que mudam</span>
+          <h1 id="hero-title">Há sentimentos que só encontram casa <em>nas palavras.</em></h1>
+          <p class="hero-copy">Em poemas e romances, Lorrane Fernandes escreve sobre memória, afeto e os recomeços que chegam sem fazer alarde.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://loja.uiclap.com/titulo/ua102727" target="_blank" rel="noopener noreferrer">Comprar Versos de Mim <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#newsletter">Entrar na lista de espera do romance</a>
+          </div>
+          <p class="hero-note">Uma obra publicada. Duas histórias em construção.</p>
         </div>
-        <figure class="landscape">
-          <img src="assets/ireland-temple-bar.jpg" alt="Fachada do pub The Temple Bar em Dublin, na Irlanda" loading="lazy">
-          <figcaption class="landscape-caption">The Temple Bar · Dublin</figcaption>
+        <div class="book-art" aria-label="Representação gráfica da capa de Versos de Mim">
+          <div class="book-orbit" aria-hidden="true"></div>
+          <div class="book-cover" aria-hidden="true">
+            <span class="cover-author">Lorrane Fernandes</span>
+            <span class="cover-flower">✿</span>
+            <strong class="cover-title">Versos<br>de Mim</strong>
+            <span class="cover-subtitle">poemas sobre ser, sentir e florescer</span>
+            <span class="cover-edition">Poesia · livro físico</span>
+          </div>
+          <p class="hero-label">Palavras que ficam<br>como flores entre páginas</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section book-section" id="livro" aria-labelledby="book-heading">
+      <div class="shell book-layout">
+        <div class="book-copy">
+          <span class="eyebrow">Livro de poesia · edição impressa</span>
+          <h2 id="book-heading">Versos de Mim</h2>
+          <p>Uma coletânea sobre ser, sentir e florescer. Poemas que acompanham os dias de descoberta, as saudades, as mudanças e a coragem tranquila de começar de novo.</p>
+          <blockquote class="book-quote">“Cada página é um lugar para respirar com calma e reconhecer o que ainda floresce.”</blockquote>
+          <p class="muted">Encontre a edição e as condições de compra diretamente na UICLAP.</p>
+          <a class="button button-primary" href="https://loja.uiclap.com/titulo/ua102727" target="_blank" rel="noopener noreferrer">Comprar na UICLAP <span aria-hidden="true">↗</span></a>
+        </div>
+        <aside class="book-facts" aria-label="Ficha do livro Versos de Mim">
+          <div class="facts-top">
+            <div><span class="eyebrow">Ficha do livro</span><h3>Uma edição para guardar</h3></div>
+            <span class="price">R$ 50</span>
+          </div>
+          <dl class="facts-grid">
+            <div class="fact"><dt>Autora</dt><dd>Lorrane Fernandes</dd></div>
+            <div class="fact"><dt>Formato</dt><dd>Impresso · A5</dd></div>
+            <div class="fact"><dt>Páginas</dt><dd>Consulte a edição</dd></div>
+            <div class="fact"><dt>Publicado em</dt><dd>2025</dd></div>
+            <div class="fact"><dt>ISBN</dt><dd>978-65-01-68794-0</dd></div>
+            <div class="fact"><dt>Idioma</dt><dd>Português</dd></div>
+          </dl>
+          <a class="button button-primary" href="https://loja.uiclap.com/titulo/ua102727" target="_blank" rel="noopener noreferrer">Ver edição e comprar</a>
+          <p class="facts-note">Preço de referência informado pela autora; confirme o valor vigente na página da UICLAP.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section sample-section" id="poema" aria-labelledby="poem-heading">
+      <div class="shell sample-grid">
+        <div class="section-intro">
+          <span class="eyebrow">Uma pequena amostra</span>
+          <h2 id="poem-heading">Leia um poema</h2>
+          <p>Um intervalo breve para encontrar o tom destas páginas. Use o botão para ler outro poema de amostra.</p>
+          <button class="button button-secondary button-small" id="next-poem" type="button">Ler outro poema <span aria-hidden="true">↻</span></button>
+          <p class="poem-note">Poemas de demonstração para esta página; substitua pelos textos autorizados de Versos de Mim.</p>
+        </div>
+        <div class="sample-card" aria-live="polite" aria-atomic="true">
+          <div>
+            <p class="poem-title" id="poem-title">Entre estações</p>
+            <blockquote class="poem" id="poem-text">Guardei a primavera
+na dobra de uma carta.
+O tempo abriu as mãos —
+e o silêncio virou jardim.</blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="resenhas" aria-labelledby="reviews-heading">
+      <div class="shell">
+        <div class="section-intro">
+          <span class="eyebrow">Leituras que continuam</span>
+          <h2 id="reviews-heading">O que as leitoras levam consigo</h2>
+          <p>Este espaço está reservado para comentários reais, publicados com autorização.</p>
+        </div>
+        <div class="review-grid">
+          <!-- PLACEHOLDER EDITÁVEL: substituir apenas por resenha real e autorizada. -->
+          <article class="review-card"><span class="review-mark" aria-hidden="true">“</span><blockquote>[Insira aqui uma resenha autorizada sobre Versos de Mim.]</blockquote><div class="review-byline">[Nome ou iniciais da leitora]</div><div class="review-placeholder">[Origem da avaliação, se autorizada]</div></article>
+          <article class="review-card"><span class="review-mark" aria-hidden="true">“</span><blockquote>[Insira aqui outra impressão real de leitura.]</blockquote><div class="review-byline">[Nome ou iniciais da leitora]</div><div class="review-placeholder">[Origem da avaliação, se autorizada]</div></article>
+          <article class="review-card"><span class="review-mark" aria-hidden="true">“</span><blockquote>[Reserve este espaço para uma nova voz leitora.]</blockquote><div class="review-byline">[Nome ou iniciais da leitora]</div><div class="review-placeholder">[Origem da avaliação, se autorizada]</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="romances" aria-labelledby="projects-heading">
+      <div class="shell">
+        <div class="section-intro">
+          <span class="eyebrow">Duas histórias, caminhos diferentes</span>
+          <h2 id="projects-heading">Romances em construção</h2>
+          <p>As Estações do Coração percorre quatro movimentos sazonais. As Coisas que Deixamos no Inverno é apresentado aqui por outro conjunto de personagens: os núcleos Valença, Duarte e Fagundes.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <span class="eyebrow">Romance · projeto principal</span>
+            <h3>As Estações do Coração</h3>
+            <p>Uma história pensada em quatro movimentos: primavera, verão, outono e inverno. O tempo muda a paisagem; os sentimentos também.</p>
+            <p class="project-status">Status: em construção · data prevista ainda não anunciada</p>
+          </article>
+          <article class="project-card">
+            <span class="eyebrow">Romance · personagens Valença e Duarte</span>
+            <h3>As Coisas que Deixamos no Inverno</h3>
+            <p>Outro romance da autora, apresentado por personagens dos núcleos Valença, Duarte e Fagundes. Uma história com vínculos e perguntas que serão revelados no tempo certo.</p>
+            <p class="project-status">Status: em desenvolvimento · data prevista ainda não anunciada</p>
+          </article>
+        </div>
+        <div class="season-timeline" aria-label="Percurso narrativo pelas quatro estações">
+          <article class="season"><span class="season-index">01 · COMEÇO</span><h4>Primavera</h4><p>O tempo de abrir espaço para o que chega.</p></article>
+          <article class="season"><span class="season-index">02 · PRESENÇA</span><h4>Verão</h4><p>Quando a vida acontece em plena luz.</p></article>
+          <article class="season"><span class="season-index">03 · MUDANÇA</span><h4>Outono</h4><p>O que parte também revela o que permanece.</p></article>
+          <article class="season"><span class="season-index">04 · MEMÓRIA</span><h4>Inverno</h4><p>O silêncio prepara o próximo movimento.</p></article>
+        </div>
+        <p class="date-note">As etapas indicam a estrutura temática do projeto; datas de publicação serão anunciadas quando estiverem definidas.</p>
+      </div>
+    </section>
+
+    <section class="section characters-section" id="personagens" aria-labelledby="characters-heading">
+      <div class="shell">
+        <div class="section-intro">
+          <span class="eyebrow">As Coisas que Deixamos no Inverno</span>
+          <h2 id="characters-heading">Personagens e seus núcleos</h2>
+          <p>Toque em um cartão para abrir sua ficha. Os papéis e as descrições aguardam os detalhes oficiais da história.</p>
+        </div>
+        <div class="character-grid">
+          <article class="character-card">
+            <img class="character-photo" src="assets/characters/augusto-valenca.webp" alt="Retrato de Augusto Valença" width="600" height="600" loading="lazy" decoding="async">
+            <div class="character-info"><span class="family-label">Núcleo Valença</span><h3>Augusto Valença</h3><p class="character-line">Um dos nomes que compõem a família Valença.</p><button class="character-open" type="button" data-name="Augusto Valença" data-family="Núcleo Valença" aria-haspopup="dialog">Abrir ficha</button></div>
+          </article>
+          <article class="character-card">
+            <img class="character-photo" src="assets/characters/celeste-fagundes.webp" alt="Retrato de Dona Celeste Fagundes" width="360" height="360" loading="lazy" decoding="async">
+            <div class="character-info"><span class="family-label">Núcleo Fagundes</span><h3>Dona Celeste Fagundes</h3><p class="character-line">Uma personagem do núcleo Fagundes.</p><button class="character-open" type="button" data-name="Dona Celeste Fagundes" data-family="Núcleo Fagundes" aria-haspopup="dialog">Abrir ficha</button></div>
+          </article>
+          <article class="character-card">
+            <img class="character-photo" src="assets/characters/marina-duarte.webp" alt="Retrato de Marina Duarte" width="736" height="736" loading="lazy" decoding="async">
+            <div class="character-info"><span class="family-label">Núcleo Duarte</span><h3>Marina Duarte</h3><p class="character-line">Uma das histórias que pertencem ao núcleo Duarte.</p><button class="character-open" type="button" data-name="Marina Duarte" data-family="Núcleo Duarte" aria-haspopup="dialog">Abrir ficha</button></div>
+          </article>
+          <article class="character-card">
+            <img class="character-photo" src="assets/characters/tomas-valenca.webp" alt="Retrato de Tomás Valença" width="735" height="735" loading="lazy" decoding="async">
+            <div class="character-info"><span class="family-label">Núcleo Valença</span><h3>Tomás Valença</h3><p class="character-line">Um dos nomes que compõem a família Valença.</p><button class="character-open" type="button" data-name="Tomás Valença" data-family="Núcleo Valença" aria-haspopup="dialog">Abrir ficha</button></div>
+          </article>
+          <article class="character-card">
+            <img class="character-photo" src="assets/characters/benicio-duarte.webp" alt="Retrato de Benício Duarte" width="736" height="736" loading="lazy" decoding="async">
+            <div class="character-info"><span class="family-label">Núcleo Duarte</span><h3>Benício Duarte</h3><p class="character-line">Um dos nomes que compõem a família Duarte.</p><button class="character-open" type="button" data-name="Benício Duarte" data-family="Núcleo Duarte" aria-haspopup="dialog">Abrir ficha</button></div>
+          </article>
+          <article class="character-card">
+            <img class="character-photo" src="assets/characters/elena-valenca.webp" alt="Retrato de Elena Valença" width="736" height="736" loading="lazy" decoding="async">
+            <div class="character-info"><span class="family-label">Núcleo Valença</span><h3>Elena Valença</h3><p class="character-line">Uma das histórias que pertencem ao núcleo Valença.</p><button class="character-open" type="button" data-name="Elena Valença" data-family="Núcleo Valença" aria-haspopup="dialog">Abrir ficha</button></div>
+          </article>
+          <article class="character-card">
+            <img class="character-photo" src="assets/characters/isabel-valenca.webp" alt="Retrato de Isabel Valença" width="736" height="736" loading="lazy" decoding="async">
+            <div class="character-info"><span class="family-label">Núcleo Valença</span><h3>Isabel Valença</h3><p class="character-line">Um dos nomes que compõem a família Valença.</p><button class="character-open" type="button" data-name="Isabel Valença" data-family="Núcleo Valença" aria-haspopup="dialog">Abrir ficha</button></div>
+          </article>
+        </div>
+        <p class="editorial-placeholder">As frases são identificadores provisórios, não revelam relações ou características ainda não confirmadas.</p>
+      </div>
+    </section>
+
+    <section class="section relation-section" aria-labelledby="relations-heading">
+      <div class="shell">
+        <div class="section-intro">
+          <span class="eyebrow">Mapa de relações</span>
+          <h2 id="relations-heading">Valença &amp; Duarte</h2>
+          <p>Os núcleos estão organizados pelos sobrenomes conhecidos. O vínculo entre as famílias permanece a ser revelado pela autora.</p>
+        </div>
+        <div class="relation-map" role="group" aria-label="Mapa simples dos núcleos Valença e Duarte">
+          <div class="family-node"><h3>Família Valença</h3><ul><li>Augusto Valença</li><li>Tomás Valença</li><li>Elena Valença</li><li>Isabel Valença</li></ul></div>
+          <div class="relation-link" aria-label="Vínculo entre as famílias ainda não revelado">histórias que se cruzam</div>
+          <div class="family-node"><h3>Família Duarte</h3><ul><li>Marina Duarte</li><li>Benício Duarte</li></ul></div>
+          <p class="fagundes-note"><strong>Dona Celeste Fagundes</strong> aparece em um núcleo próprio; seu vínculo com as demais famílias será apresentado no romance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ireland" id="irlanda" aria-labelledby="ireland-heading">
+      <div class="shell ireland-grid">
+        <div>
+          <span class="eyebrow">Caderno de lugares</span>
+          <h2 id="ireland-heading">Irlanda, entre a rua e a lembrança.</h2>
+          <p class="ireland-copy">Há lugares que parecem guardar o som de muitas conversas. Em Dublin, uma fachada vermelha atravessa a chuva e permanece acesa na memória de quem passa.</p>
+          <blockquote class="story-fragment">“A cidade seguia apressada. Eu, pela primeira vez, não tinha vontade de chegar antes de mim.”</blockquote>
+          <small class="editorial-note">Fragmento original para esta página; não é um trecho literal do manuscrito.</small>
+        </div>
+        <figure class="ireland-photo">
+          <img src="assets/ireland-temple-bar.jpg" alt="Fachada vermelha do pub The Temple Bar em uma rua de Dublin" width="660" height="310" loading="lazy" decoding="async">
+          <figcaption>The Temple Bar · Dublin, Irlanda</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section author" id="autora">
-      <div class="wrap author-inner">
-        <div class="author-monogram" aria-hidden="true">LF</div>
+    <section class="section newsletter" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="shell newsletter-grid">
+        <div>
+          <span class="eyebrow">Uma carta de vez em quando</span>
+          <h2 id="newsletter-heading">Receba capítulos e novidades</h2>
+          <p class="muted">Deixe seu e-mail para acompanhar as próximas páginas de As Estações do Coração e As Coisas que Deixamos no Inverno.</p>
+        </div>
+        <form class="signup-card" id="newsletter-form">
+          <label for="email">Seu e-mail</label>
+          <input class="email-input" id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+          <div class="consent-row">
+            <input id="consent" name="consent" type="checkbox" required>
+            <label for="consent">Quero receber capítulos e novidades por e-mail. Sei que posso pedir o cancelamento a qualquer momento.</label>
+          </div>
+          <button class="button button-primary" type="submit">Quero acompanhar</button>
+          <p class="privacy-note">Seu e-mail será usado somente para novidades literárias, após a ativação da lista. O formulário ainda precisa ser conectado a um serviço de envio.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section author-section" id="autora" aria-labelledby="author-heading">
+      <div class="shell author-grid">
+        <div>
+          <div class="author-portrait" role="img" aria-label="Espaço reservado para a fotografia de Lorrane Fernandes"><span>LF</span></div>
+          <p class="portrait-note">Retrato da autora em atualização</p>
+        </div>
         <div>
           <span class="eyebrow">Por trás das páginas</span>
-          <h2>Sobre a autora</h2>
-          <p>Sou Lorrane Fernandes, escritora e estudante de psicopedagogia. Encontro nas palavras um jeito de acolher sentimentos, guardar memórias e imaginar novos caminhos. Escrevo sobre aquilo que nos transforma — por dentro e ao longo do tempo.</p>
-          <a class="footer-link" href="https://www.instagram.com/words_lo/" target="_blank" rel="noopener noreferrer">Acompanhe meus escritos no Instagram ↗</a>
+          <h2 id="author-heading">Lorrane Fernandes</h2>
+          <p class="author-bio">Sou escritora, estudante de psicopedagogia, cristã, sonhadora e leitora desde sempre. Em Versos de Mim, reuni palavras para sentimentos que às vezes chegam antes do nome. Nos romances, sigo a memória, os laços de família e os lugares que continuam vivendo dentro da gente.</p>
+          <p class="author-bio">Gosto de histórias que respeitam o tempo de cada pessoa — como um livro que se abre sem pressa e encontra companhia na hora certa.</p>
+          <div class="contact-links" aria-label="Contato profissional">
+            <a class="contact-link" href="https://www.instagram.com/words_lo/" target="_blank" rel="noopener noreferrer">Parcerias e resenhas pelo Instagram ↗</a>
+            <a class="contact-link" href="https://loja.uiclap.com/titulo/ua102727" target="_blank" rel="noopener noreferrer">Versos de Mim na UICLAP ↗</a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="closing">
-      <div class="wrap">
-        <blockquote>“Alguns amores chegam como a primavera. Outros permanecem por todas as estações.”</blockquote>
-        <p>Uma história de Lorrane Fernandes</p>
+      <div class="shell">
+        <blockquote>“O que floresce em nós também merece um lugar na página.”</blockquote>
+        <p>Lorrane Fernandes · escritora</p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap footer-row">
-      <div><div class="footer-brand">Lorrane Fernandes</div><p>Palavras para sentir, lembrar e florescer.</p></div>
-      <a class="footer-link" href="https://loja.uiclap.com/titulo/ua102727" target="_blank" rel="noopener noreferrer">Versos de Mim na UICLAP ↗</a>
+  <footer class="site-footer">
+    <div class="shell footer-row">
       <p>© <span id="year"></span> Lorrane Fernandes</p>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/words_lo/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://loja.uiclap.com/titulo/ua102727" target="_blank" rel="noopener noreferrer">UICLAP</a>
+        <a href="#inicio">Voltar ao início ↑</a>
+      </div>
     </div>
   </footer>
+
+  <dialog id="character-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-copy">
+    <div class="dialog-inner">
+      <button class="dialog-close" type="button" aria-label="Fechar ficha">×</button>
+      <span class="dialog-family" id="dialog-family"></span>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-copy">Esta ficha aguarda a descrição oficial da autora: papel na história, vínculos e uma frase de apresentação.</p>
+    </div>
+  </dialog>
+
   <script>
-    const menuButton = document.querySelector('.menu-toggle');
-    const links = document.querySelector('.nav-links');
-    menuButton.addEventListener('click', () => {
-      const isOpen = links.classList.toggle('open');
-      menuButton.setAttribute('aria-expanded', String(isOpen));
+    const menuButton = document.querySelector('.menu-button');
+    const navLinks = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', function () {
+      const open = navLinks.classList.toggle('is-open');
+      menuButton.setAttribute('aria-expanded', String(open));
     });
-    links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      links.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
-    }));
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    const poems = [
+      {
+        title: 'Entre estações',
+        text: 'Guardei a primavera\nna dobra de uma carta.\nO tempo abriu as mãos —\ne o silêncio virou jardim.'
+      },
+      {
+        title: 'Pequena permanência',
+        text: 'Nem tudo que parte\ndeixa de morar.\nHá lembranças que acendem\na luz de voltar.'
+      },
+      {
+        title: 'Depois da chuva',
+        text: 'A janela ficou aberta.\nO mundo respirou devagar.\nE eu também, por um instante,\nparei de me apressar.'
+      }
+    ];
+    let poemIndex = 0;
+    document.querySelector('#next-poem').addEventListener('click', function () {
+      poemIndex = (poemIndex + 1) % poems.length;
+      document.querySelector('#poem-title').textContent = poems[poemIndex].title;
+      document.querySelector('#poem-text').textContent = poems[poemIndex].text;
+    });
+
+    const characterDialog = document.querySelector('#character-dialog');
+    const dialogTitle = document.querySelector('#dialog-title');
+    const dialogFamily = document.querySelector('#dialog-family');
+    document.querySelectorAll('.character-open').forEach(function (button) {
+      button.addEventListener('click', function () {
+        dialogTitle.textContent = button.dataset.name;
+        dialogFamily.textContent = button.dataset.family;
+        characterDialog.showModal();
+      });
+    });
+    document.querySelector('.dialog-close').addEventListener('click', function () {
+      characterDialog.close();
+    });
+    characterDialog.addEventListener('click', function (event) {
+      if (event.target === characterDialog) characterDialog.close();
+    });
+
+    document.querySelector('#newsletter-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      document.querySelector('#form-status').textContent = 'O formulário está pronto, mas a lista de e-mails ainda precisa ser conectada para concluir a inscrição.';
+    });
     document.querySelector('#year').textContent = new Date().getFullYear();
   </script>
 </body>
