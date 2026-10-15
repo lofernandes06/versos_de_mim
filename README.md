@@ -21,6 +21,9 @@ No Windows PowerShell, dentro da pasta do projeto:
 
 ```powershell
 npx wrangler login
+Invoke-WebRequest "https://raw.githubusercontent.com/lofernandes06/versos_de_mim/main/index.html" -OutFile ".\index.html"
+New-Item -ItemType Directory -Force .\assets | Out-Null
+Invoke-WebRequest "https://raw.githubusercontent.com/lofernandes06/versos_de_mim/main/assets/lorrane-fernandes.webp" -OutFile ".\assets\lorrane-fernandes.webp"
 Remove-Item .\dist -Recurse -Force -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force .\dist | Out-Null
 Copy-Item .\index.html, .\robots.txt, .\sitemap.xml .\dist\ -Force
