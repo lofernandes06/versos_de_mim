@@ -1,56 +1,51 @@
 # Lorrane Fernandes — site literário
 
-Site de autora para apresentar *Versos de Mim* e acompanhar os projetos de romance *As Estações do Coração* e *As Coisas que Deixamos no Inverno*.
+Site de autora para apresentar *Versos de Mim* e acompanhar os romances *As Estações do Coração* e *As Coisas que Deixamos no Inverno*.
 
-## O que há no site
+## Projeto
 
-- CTA de compra para a UICLAP e convite para a lista de novidades.
-- Ficha do livro, amostra de poemas e espaços editáveis para resenhas autorizadas.
-- Apresentação dos romances e percurso narrativo pelas quatro estações.
-- Galeria dos personagens, mapa inicial de núcleos familiares e ambientação na Irlanda.
-- Formulário de interesse com consentimento. Para receber inscrições, conecte-o a uma plataforma de e-mail.
-- HTML, CSS e JavaScript em `index.html`; recursos de SEO em `robots.txt` e `sitemap.xml`.
+- Site em um único `index.html`, com CSS e JavaScript embutidos.
+- Retratos dos personagens com fallback de monograma e mapa de relações.
+- Política de Privacidade em `politica-de-privacidade.html`.
+- `src/worker.js` serve os arquivos e recebe inscrições em `POST /api/subscribe`.
+- Imagem social `assets/og-lorrane-fernandes.png` em 1200 × 630.
+- `robots.txt` e `sitemap.xml` publicados na raiz.
 
-O retrato de Lorrane Fernandes foi fornecido pela autora. Os poemas da página são textos de demonstração e devem ser substituídos por poemas autorizados antes da publicação editorial definitiva.
+Poemas, resenhas, número de páginas, ligação da Irlanda com a trama, relação entre Marina e Benício e e-mail profissional estão comentados no código para serem preenchidos com informações confirmadas e autorizadas.
+
+## Newsletter
+
+A inscrição usa Cloudflare Turnstile contra automação e envia o contato, depois do consentimento, à lista da Brevo. O Worker precisa das chaves `TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY`, `BREVO_API_KEY` e `BREVO_LIST_ID`. Siga [NEWSLETTER_SETUP.md](NEWSLETTER_SETUP.md) para configurar os segredos. Sem eles, o formulário informa que a lista ainda não está disponível e não simula uma inscrição.
 
 ## Publicação automática pelo GitHub
 
-Para publicar cada atualização enviada à branch `main`, conecte o Worker existente ao repositório pelo painel Cloudflare:
+Quando o Worker estiver conectado ao Cloudflare Workers Builds, cada atualização enviada para `main` pode iniciar automaticamente o build e deploy. No painel Cloudflare, o projeto deve usar:
 
-1. Abra **Workers & Pages** e selecione o Worker `versos-de-mim`.
-2. Vá em **Settings > Builds > Connect** e conecte `lofernandes06/versos_de_mim`.
-3. Autorize a integração GitHub do Cloudflare para esse repositório.
-4. Configure a branch de produção como `main`, diretório raiz como `/`, comando de build como `bash ./build.sh` e comando de deploy como `npx wrangler deploy`.
+- Diretório raiz: `/`
+- Comando de build: `bash ./build.sh`
+- Comando de deploy: `npx wrangler deploy`
 
-O nome do Worker já corresponde ao campo `name` de `wrangler.jsonc`. Depois de salvar a conexão, cada push à branch `main` aciona o build e deploy automaticamente. O comando manual abaixo continua disponível como alternativa.
+O `wrangler.jsonc` define `src/worker.js` como Worker e `dist/` como diretório de arquivos estáticos. O script de build prepara o HTML, a política, SEO e imagens nessa pasta.
 
-## Publicar no Cloudflare Workers
+## Publicação manual
 
-O `wrangler.jsonc` configura o Worker `versos-de-mim` para servir os arquivos em `dist/`.
-
-No Windows PowerShell, dentro da pasta do projeto:
-
-```powershell
-npx wrangler login
-Invoke-WebRequest "https://raw.githubusercontent.com/lofernandes06/versos_de_mim/main/index.html" -OutFile ".\index.html"
-New-Item -ItemType Directory -Force .\assets | Out-Null
-Invoke-WebRequest "https://raw.githubusercontent.com/lofernandes06/versos_de_mim/main/assets/lorrane-fernandes.webp" -OutFile ".\assets\lorrane-fernandes.webp"
-Remove-Item .\dist -Recurse -Force -ErrorAction SilentlyContinue
-New-Item -ItemType Directory -Force .\dist | Out-Null
-Copy-Item .\index.html, .\robots.txt, .\sitemap.xml .\dist\ -Force
-Copy-Item .\assets .\dist\ -Recurse -Force
-npx wrangler deploy
-```
-
-No macOS, Linux ou Git Bash:
+Com Wrangler autenticado, em macOS, Linux ou Git Bash:
 
 ```bash
 bash ./build.sh
 npx wrangler deploy
 ```
 
-O deploy atualiza o Worker público. Não publique até copiar para a pasta local as alterações mais recentes do repositório.
+No Windows PowerShell, dentro da pasta do projeto:
 
-## Ver localmente
+```powershell
+Remove-Item .\dist -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Force .\dist | Out-Null
+Copy-Item .\index.html, .\politica-de-privacidade.html, .\robots.txt, .\sitemap.xml .\dist\ -Force
+Copy-Item .\assets .\dist\ -Recurse -Force
+npx wrangler deploy
+```
 
-Abra `index.html` no navegador. As imagens ficam em `assets/`.
+## Verificar
+
+Abra `index.html` no navegador ou execute `bash ./build.sh` e sirva a pasta `dist/` em um servidor local. O endpoint de newsletter depende das chaves da Cloudflare e da Brevo.
