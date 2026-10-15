@@ -1,28 +1,42 @@
-# As Estações do Coração — Lorrane Fernandes
+# Lorrane Fernandes — site literário
 
-Site literário de Lorrane Fernandes, reunindo *Versos de Mim*, *As Estações do Coração* e a galeria de personagens de *As Coisas que Deixamos no Inverno*.
+Site de autora para apresentar *Versos de Mim* e acompanhar os projetos de romance *As Estações do Coração* e *As Coisas que Deixamos no Inverno*.
 
-## O site
+## O que há no site
 
-- Apresentação de *Versos de Mim* com link para a UICLAP.
-- Seções sobre os romances, as quatro estações e a Irlanda.
-- Galeria com os personagens de *As Coisas que Deixamos no Inverno*.
-- Layout responsivo, navegação para celular e HTML, CSS e JavaScript em um único arquivo.
+- CTA de compra para a UICLAP e convite para a lista de novidades.
+- Ficha do livro, amostra de poemas e espaços editáveis para resenhas autorizadas.
+- Apresentação dos romances e percurso narrativo pelas quatro estações.
+- Galeria dos personagens, mapa inicial de núcleos familiares e ambientação na Irlanda.
+- Formulário de interesse com consentimento. Para receber inscrições, conecte-o a uma plataforma de e-mail.
+- HTML, CSS e JavaScript em `index.html`; recursos de SEO em `robots.txt` e `sitemap.xml`.
+
+As descrições de personagens e o retrato da autora aguardam os materiais oficiais. Os poemas da página são textos de demonstração e devem ser substituídos por poemas autorizados antes da publicação editorial definitiva.
 
 ## Publicar no Cloudflare Workers
 
-O arquivo `wrangler.jsonc` configura o site como um Worker de arquivos estáticos, compatível com o endereço `*.workers.dev`.
+O `wrangler.jsonc` configura o Worker `versos-de-mim` para servir os arquivos em `dist/`.
 
-Para publicar a partir de um computador autenticado na sua conta Cloudflare:
+No Windows PowerShell, dentro da pasta do projeto:
 
-1. Execute `npx wrangler login` para autenticar.
-2. Execute `bash ./build.sh` para preparar `dist/`.
-3. Execute `npx wrangler deploy` para atualizar o Worker `versos-de-mim`.
+```powershell
+npx wrangler login
+Remove-Item .\dist -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory -Force .\dist | Out-Null
+Copy-Item .\index.html, .\robots.txt, .\sitemap.xml .\dist\ -Force
+Copy-Item .\assets .\dist\ -Recurse -Force
+npx wrangler deploy
+```
 
-O script prepara `dist/index.html` e copia as imagens de `assets/characters/` para `dist/assets/characters/`. O Worker serve a página principal e suas imagens a partir dessa pasta.
+No macOS, Linux ou Git Bash:
 
-Guia oficial: https://developers.cloudflare.com/workers/static-assets/get-started/
+```bash
+bash ./build.sh
+npx wrangler deploy
+```
 
-## Visualizar localmente
+O deploy atualiza o Worker público. Não publique até copiar para a pasta local as alterações mais recentes do repositório.
 
-Abra `index.html` no navegador ou execute `bash ./build.sh` para gerar os arquivos de publicação em `dist/`.
+## Ver localmente
+
+Abra `index.html` no navegador. As imagens ficam em `assets/`.
