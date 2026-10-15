@@ -11,7 +11,7 @@ Site de autora para apresentar *Versos de Mim* e acompanhar os projetos de roman
 - Formulário de interesse com consentimento. Para receber inscrições, conecte-o a uma plataforma de e-mail.
 - HTML, CSS e JavaScript em `index.html`; recursos de SEO em `robots.txt` e `sitemap.xml`.
 
-As descrições de personagens e o retrato da autora aguardam os materiais oficiais. Os poemas da página são textos de demonstração e devem ser substituídos por poemas autorizados antes da publicação editorial definitiva.
+O retrato de Lorrane Fernandes foi fornecido pela autora. Os poemas da página são textos de demonstração e devem ser substituídos por poemas autorizados antes da publicação editorial definitiva.
 
 ## Publicar no Cloudflare Workers
 
