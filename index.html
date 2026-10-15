@@ -244,9 +244,7 @@
 
     .author-section { background: #f0ece3; }
     .author-grid { display: grid; grid-template-columns: 220px 1fr; align-items: center; gap: 46px; max-width: 920px; }
-    .author-portrait { position: relative; display: grid; width: 200px; aspect-ratio: 4 / 5; place-items: center; overflow: hidden; border: 1px solid rgba(53,87,72,.3); color: var(--forest); background: radial-gradient(circle at 50% 36%,rgba(255,255,255,.8) 0 18%,transparent 19%), linear-gradient(160deg,#e6e8df,#d9c9bf 70%,#b7c7b5); }
-    .author-portrait::before { position: absolute; right: -30px; bottom: -60px; left: -30px; height: 54%; border-radius: 50% 50% 0 0; background: rgba(53,87,72,.17); content: ""; }
-    .author-portrait span { position: relative; z-index: 1; padding: 6px 10px; border: 1px solid rgba(53,87,72,.3); border-radius: 50%; background: rgba(247,244,237,.82); font: italic 2.2rem var(--serif); }
+    .author-portrait { display: block; width: 200px; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; border: 1px solid rgba(53,87,72,.3); box-shadow: var(--shadow); }
     .portrait-note { margin: 8px 0 0; color: var(--muted); font-size: .68rem; text-align: center; }
     .author-bio { color: var(--muted); }
     .contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
@@ -581,8 +579,8 @@ e o silêncio virou jardim.</blockquote>
     <section class="section author-section" id="autora" aria-labelledby="author-heading">
       <div class="shell author-grid">
         <div>
-          <div class="author-portrait" role="img" aria-label="Espaço reservado para a fotografia de Lorrane Fernandes"><span>LF</span></div>
-          <p class="portrait-note">Retrato da autora em atualização</p>
+          <img class="author-portrait" src="assets/lorrane-fernandes.webp" alt="Retrato de Lorrane Fernandes, com pequenas flores desenhadas sobre o rosto" width="720" height="1280" loading="lazy" decoding="async">
+          <p class="portrait-note">Lorrane Fernandes</p>
         </div>
         <div>
           <span class="eyebrow">Por trás das páginas</span>
