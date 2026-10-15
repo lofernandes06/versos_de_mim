@@ -3,7 +3,7 @@ set -euo pipefail
 
 rm -rf dist
 mkdir -p dist
-cp index.html dist/index.html
+cp index.html robots.txt sitemap.xml dist/
 if [[ -d assets ]]; then
   cp -R assets dist/assets
 fi
