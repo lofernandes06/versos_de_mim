@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://versos-de-mim.lofernandes2006.workers.dev/sitemap.xml
