@@ -13,6 +13,17 @@ Site de autora para apresentar *Versos de Mim* e acompanhar os projetos de roman
 
 O retrato de Lorrane Fernandes foi fornecido pela autora. Os poemas da página são textos de demonstração e devem ser substituídos por poemas autorizados antes da publicação editorial definitiva.
 
+## Publicação automática pelo GitHub
+
+Para publicar cada atualização enviada à branch `main`, conecte o Worker existente ao repositório pelo painel Cloudflare:
+
+1. Abra **Workers & Pages** e selecione o Worker `versos-de-mim`.
+2. Vá em **Settings > Builds > Connect** e conecte `lofernandes06/versos_de_mim`.
+3. Autorize a integração GitHub do Cloudflare para esse repositório.
+4. Configure a branch de produção como `main`, diretório raiz como `/`, comando de build como `bash ./build.sh` e comando de deploy como `npx wrangler deploy`.
+
+O nome do Worker já corresponde ao campo `name` de `wrangler.jsonc`. Depois de salvar a conexão, cada push à branch `main` aciona o build e deploy automaticamente. O comando manual abaixo continua disponível como alternativa.
+
 ## Publicar no Cloudflare Workers
 
 O `wrangler.jsonc` configura o Worker `versos-de-mim` para servir os arquivos em `dist/`.
